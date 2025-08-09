@@ -1,0 +1,75 @@
+/*default*/
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  width: 100vw;
+  max-width: 430px;
+  height: 30vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.overlaydoa {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* HP kecil: sampai 401px */
+@media (max-width: 401px) {
+  /* CSS khusus HP kecil */
+
+  .doatitle {
+    font-size: 1.2rem;
+  }
+
+  .doatext {
+    font-size: 0.8rem;
+  }
+}
+
+/* HP sedang: 402px sampai 429px */
+@media (min-width: 402px) and (max-width: 429px) {
+  /* CSS khusus HP sedang */
+}
+
+/* HP besar dan ke atas: 430px atau lebih */
+@media (min-width: 430px) {
+}

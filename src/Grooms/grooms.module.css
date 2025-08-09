@@ -1,0 +1,170 @@
+/*default*/
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.headerwrapper {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  overflow: hidden; /* hides overflow caused by scale */
+}
+
+.header {
+  position: relative;
+  width: 100vw;
+  max-width: 430px;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transform-origin: bottom center; /* zoom from bottom */
+}
+
+.overlaybrides {
+  position: absolute;
+  inset: 0;
+  background: url("../assets/grooms.JPG") center/cover no-repeat;
+  transform: scale(1.5);
+}
+
+.bridescontent {
+  position: relative;
+  z-index: 1;
+  text-align: start;
+  color: white;
+  width: 400px;
+  height: 150px;
+  max-width: 430px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background-color: black;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4); /* hanya background yang transparan */
+}
+
+.name {
+  z-index: 1;
+  color: black;
+  font-size: 4rem;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  line-height: 1;
+}
+
+.fullname {
+  z-index: 2;
+  color: white;
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.desc {
+  z-index: 2;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  line-height: 1;
+}
+
+.parent {
+  z-index: 2;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: start;
+  justify-content: center;
+}
+
+.subtitle {
+  font-size: 2.1rem;
+  font-family: "Tangerine", cursive;
+  margin: 0;
+}
+
+.doatitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.doatext {
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.instagram-box {
+  width: 300px;
+}
+
+.instagram-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.instagramsec {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* HP kecil: sampai 401px */
+@media (max-width: 401px) {
+  /* CSS khusus HP kecil */
+}
+
+/* HP sedang: 402px sampai 429px */
+@media (min-width: 402px) and (max-width: 429px) {
+  /* CSS khusus HP sedang */
+}
+
+/* HP besar dan ke atas: 430px atau lebih */
+@media (min-width: 430px) {
+}

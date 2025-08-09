@@ -1,0 +1,135 @@
+/*default*/
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wedding-header {
+  position: relative;
+  width: 100vw;
+  max-width: 430px;
+  height: 100vh;
+  background: url("../assets/bg_foto.JPG") center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
+.wedding-header .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 0 30px;
+  max-width: 430px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.subtitle {
+  font-size: 2.1rem;
+  font-family: "Tangerine", cursive;
+  margin: 0;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+}
+
+.guest {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.invitation-button {
+  display: inline-block;
+  background-color: #111111;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+  transition: background-color 0.3s ease;
+}
+
+.invitation-button:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* HP kecil: sampai 401px */
+@media (max-width: 401px) {
+  /* CSS khusus HP kecil */
+
+  .wedding-header {
+    max-width: 401px;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+  }
+
+  .greeting {
+    font-size: 1.1rem;
+  }
+
+  .guest {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .header-content {
+    margin-bottom: 60px;
+  }
+}
+
+/* HP sedang: 402px sampai 429px */
+@media (min-width: 402px) and (max-width: 429px) {
+  /* CSS khusus HP sedang */
+}
+
+/* HP besar dan ke atas: 430px atau lebih */
+@media (min-width: 430px) {
+}
