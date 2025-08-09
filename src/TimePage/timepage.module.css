@@ -1,0 +1,102 @@
+/* Base Layout */
+.header {
+  position: relative;
+  width: 100vw;
+  max-width: 430px;
+  height: auto;
+  background: url("../assets/bg_doa.JPG") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.overlaydoa {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.doacontent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 0 30px;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+/* Text Styles */
+.doatitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Cinzel Decorative", serif;
+  margin: 0 0 20px;
+}
+
+.doatext {
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  margin: 0 0 20px;
+}
+
+/* Countdown Section */
+.dateFrameWrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.dateFrame {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.dateText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.dateBackground {
+  width: 250px;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+/* Button */
+.download_button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download_button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 401px) {
+  .doatitle {
+    font-size: 1.2rem;
+  }
+
+  .doatext {
+    font-size: 0.8rem;
+  }
+
+  .dateText {
+    font-size: 1rem;
+  }
+}
