@@ -24,10 +24,16 @@ body {
   position: relative;
   width: 100vw;
   max-width: 430px;
-  height: 50vh;
-  background: url("../assets/bg_doa.JPG") center/cover no-repeat;
+  height: fit-content;
   display: flex;
-  align-items: center;
+}
+
+.image {
+  width: 100vw;
+  max-width: 430px;
+  height: fit-content;
+  max-height: 490px;
+  margin-top: auto; /* pushes the image to the bottom */
 }
 
 .overlaydoa {
@@ -36,15 +42,26 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.topcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  height: 40vh;
+}
+
 .doacontent {
   position: relative;
   z-index: 1;
-  text-align: center;
   color: white;
-  padding: 0 30px;
   max-width: 430px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
+
 .doatitle {
   font-size: 1.5rem;
   font-weight: bold;
@@ -52,7 +69,6 @@ body {
   font-weight: 600;
   font-style: normal;
   margin: 0;
-  margin-bottom: 20px;
 }
 
 .doatext {

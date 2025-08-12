@@ -41,8 +41,7 @@ body {
 .overlaybrides {
   position: absolute;
   inset: 0;
-  background: url("../assets/grooms.JPG") center/cover no-repeat;
-  transform: scale(1.5);
+  background: url("../assets/grooms.png") center/cover no-repeat;
 }
 
 .bridescontent {
@@ -58,7 +57,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   background-color: black;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.4); /* hanya background yang transparan */
@@ -66,12 +65,13 @@ body {
 
 .name {
   z-index: 1;
-  color: black;
+  color: white;
   font-size: 4rem;
   font-family: "Cinzel Decorative", serif;
   font-weight: 500;
   font-style: normal;
   margin: 0;
+  margin-bottom: 20px;
   line-height: 1;
 }
 
