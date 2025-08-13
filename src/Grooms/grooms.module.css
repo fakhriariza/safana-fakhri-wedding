@@ -41,7 +41,7 @@ body {
 .overlaybrides {
   position: absolute;
   inset: 0;
-  background: url("../assets/grooms.png") center/cover no-repeat;
+  background: url("../assets/draperybrides.jpeg") center/cover no-repeat;
 }
 
 .bridescontent {
@@ -153,6 +153,12 @@ body {
   height: 50px;
   display: flex;
   flex-direction: row;
+}
+
+.image {
+  z-index: 2;
+  width: 380px;
+  height: fit-content;
 }
 
 /* HP kecil: sampai 401px */

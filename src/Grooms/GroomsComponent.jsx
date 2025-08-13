@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./grooms.module.css";
 import instagramLogo from "../assets/instagram_logo.png";
+import grooms from "../assets/groomssquare.png";
 
 class GroomsComponent extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class GroomsComponent extends React.Component {
         <div className={style.header}>
           <div className={style.overlaybrides}></div>
           <div className={style.content}>
+            <img src={grooms} className={style.image}></img>
             <h1 className={style.name}>Fakhri</h1>
             <div className={style.bridescontent}>
               <h2 className={style.fullname}>Muhammad Fakhri Dwi Ariza</h2>

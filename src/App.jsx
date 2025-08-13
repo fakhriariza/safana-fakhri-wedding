@@ -59,9 +59,7 @@ function App() {
       {isOpened && (
         <>
           <DoaComponent />
-          <CeremonyHeader />
           <BridesComponent />
-          <AndComponent />
           <GroomsComponent />
           {guestData && guestData.invitation_id && (
             <QRComponent invitationId={guestData.invitation_id} />

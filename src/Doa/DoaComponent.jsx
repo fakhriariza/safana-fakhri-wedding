@@ -1,6 +1,6 @@
 import React from "react";
 import doastyle from "./doastyle.module.css";
-import doabg from "../assets/bgdoa.png";
+import doabg from "../assets/bgdoa.jpg";
 
 class DoaComponent extends React.Component {
   render() {

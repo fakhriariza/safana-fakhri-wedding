@@ -39,7 +39,7 @@ body {
 .overlaydoa {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: url("../assets/drapery.jpeg") center/cover no-repeat;
 }
 
 .topcontent {
@@ -59,7 +59,9 @@ body {
   color: white;
   max-width: 430px;
   display: flex;
+  max-height: 140vh;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .doatitle {
