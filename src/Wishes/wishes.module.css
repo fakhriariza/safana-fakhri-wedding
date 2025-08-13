@@ -3,14 +3,16 @@
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  background-color: #f8f5f0;
+  background: url("../assets/photobgwish.png") center/cover no-repeat; /* replace with your QR background if needed */
 }
 
 .title_wish {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  font-family: "Cinzel Decorative", serif;
+  font-family: "Bodoni Moda", serif;
   margin-bottom: 20px;
+  font-weight: 600;
+  color: #feb902;
 }
 
 .input_wish {
@@ -50,14 +52,19 @@
 
 .name_wish {
   font-weight: bold;
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .time_wish {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   color: #666;
+  margin: 0;
 }
 
 .wish {
-  font-size: 1rem;
-  margin-top: 5px;
+  font-size: 1.5rem;
+  margin-top: 2px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 900;
 }

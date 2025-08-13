@@ -1,0 +1,243 @@
+/*default*/
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.headerwrapper {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  overflow: hidden; /* hides overflow caused by scale */
+}
+
+.header {
+  position: relative;
+  width: 100vw;
+  max-width: 430px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: bottom center; /* zoom from bottom */
+  justify-content: center;
+}
+
+.overlaybrides {
+  position: absolute;
+  inset: 0;
+  background: url("../assets/bg.jpg") center/cover no-repeat;
+}
+
+.bridescontent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  width: 380px;
+  height: 90vh;
+  padding: 20px 0;
+  max-width: 380px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 140, 0, 0.5),
+    /* dark orange */ rgba(0, 0, 0, 0.7) /* black overlay */
+  );
+  align-items: center;
+  justify-content: baseline;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  z-index: 1;
+  color: #feb902;
+  font-size: 4rem;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.fullname {
+  z-index: 2;
+  color: white;
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.desc {
+  z-index: 2;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  line-height: 1;
+}
+
+.parent {
+  z-index: 2;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  font-size: 2.1rem;
+  font-family: "Tangerine", cursive;
+  margin: 0;
+}
+
+.doatitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.doatext {
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.instagram-box {
+  width: 300px;
+}
+
+.instagram-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.instagramsec {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  z-index: 2;
+  width: 380px;
+  height: fit-content;
+}
+
+.title {
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  font-size: 3rem;
+  z-index: 1;
+  color: #feb902;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-size: 1rem;
+  z-index: 1;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.headerwrapper {
+  width: 100%;
+  /* misal tinggi dan background */
+  background-color: #f5f5f5;
+}
+
+.acaraContainer {
+  padding: 10px;
+  color: white;
+}
+
+.acaraBox {
+  font-family: Arial, sans-serif;
+}
+
+.acaraTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-family: "Cinzel Decorative", serif;
+  margin: 0;
+}
+
+.acaraDetail {
+  font-size: 1.5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 900;
+  margin: 0;
+}
+
+.acaraTime {
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.acaraSeparator {
+  margin: 15px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* HP kecil: sampai 401px */
+@media (max-width: 401px) {
+  /* CSS khusus HP kecil */
+}
+
+/* HP sedang: 402px sampai 429px */
+@media (min-width: 402px) and (max-width: 429px) {
+  /* CSS khusus HP sedang */
+}
+
+/* HP besar dan ke atas: 430px atau lebih */
+@media (min-width: 430px) {
+}

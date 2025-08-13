@@ -11,6 +11,7 @@ import AndComponent from "./And/AndComponent";
 import QRComponent from "./QR/QRComponent";
 import TimePage from "./TimePage/TimePage";
 import WishPage from "./Wishes/Wishes";
+import DateTimeComponent from "./DateTime/DateTimeComponent";
 
 function App() {
   const [guestData, setGuestData] = useState(null);
@@ -60,10 +61,10 @@ function App() {
         <>
           <DoaComponent />
           <BridesComponent />
+          <DateTimeComponent />
           {guestData && guestData.invitation_id && (
             <QRComponent invitationId={guestData.invitation_id} />
           )}
-          <TimePage />
           <WishPage
             data={guestData?.wishes || []}
             invitationId={guestData?.invitation_id}
