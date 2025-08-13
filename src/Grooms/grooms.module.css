@@ -31,17 +31,15 @@ body {
   position: relative;
   width: 100vw;
   max-width: 430px;
-  height: 100vh;
+  height: fit-content;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
   transform-origin: bottom center; /* zoom from bottom */
 }
 
 .overlaybrides {
   position: absolute;
   inset: 0;
-  background: url("../assets/draperybrides.jpeg") center/cover no-repeat;
 }
 
 .bridescontent {
@@ -49,29 +47,34 @@ body {
   z-index: 1;
   text-align: start;
   color: white;
-  width: 400px;
-  height: 150px;
-  max-width: 430px;
-  padding-right: 10px;
-  padding-left: 10px;
+  width: 380px;
+  height: fit-content;
+  padding-left: 20px;
+  max-width: 380px;
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 165, 0, 0.3),
+    /* oranye lebih transparan */ rgba(255, 165, 0, 0) /* transparan penuh */
+  );
+  align-items: start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 0 auto;
-  margin-bottom: 70px;
-  background-color: black;
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.4); /* hanya background yang transparan */
 }
 
 .name {
   z-index: 1;
-  color: white;
+  color: #feb902;
   font-size: 4rem;
-  font-family: "Cinzel Decorative", serif;
+  font-family: "Bodoni Moda", serif;
   font-weight: 500;
-  font-style: normal;
+  font-style: italic;
   margin: 0;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   line-height: 1;
 }
 
@@ -113,6 +116,7 @@ body {
   flex-direction: column;
   gap: 0;
   align-items: start;
+  margin-left: 20px;
   justify-content: center;
 }
 
@@ -159,6 +163,25 @@ body {
   z-index: 2;
   width: 380px;
   height: fit-content;
+}
+
+.title {
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  font-size: 3rem;
+  z-index: 1;
+  color: #feb902;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  font-size: 1rem;
+  z-index: 1;
+  color: white;
+  margin-bottom: 50px;
 }
 
 /* HP kecil: sampai 401px */

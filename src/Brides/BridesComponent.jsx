@@ -2,6 +2,7 @@ import React from "react";
 import bridesstyle from "./brides.module.css";
 import instagramLogo from "../assets/instagram_logo.png";
 import bridesprofil from "../assets/safana.png";
+import GroomsComponent from "../Grooms/GroomsComponent";
 
 class BridesComponent extends React.Component {
   render() {
@@ -28,6 +29,7 @@ class BridesComponent extends React.Component {
               </p>
             </div>
           </div>
+          <GroomsComponent />
         </div>
       </div>
     );

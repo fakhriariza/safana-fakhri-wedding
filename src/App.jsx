@@ -60,7 +60,6 @@ function App() {
         <>
           <DoaComponent />
           <BridesComponent />
-          <GroomsComponent />
           {guestData && guestData.invitation_id && (
             <QRComponent invitationId={guestData.invitation_id} />
           )}
