@@ -17,17 +17,25 @@ class BridesComponent extends React.Component {
             of
           </h2>
           <div className={bridesstyle.content}>
-            <img src={bridesprofil} className={bridesstyle.image}></img>
-            <h1 className={bridesstyle.name}>Safana</h1>
-            <div className={bridesstyle.bridescontent}>
-              <h2 className={bridesstyle.fullname}>
-                Safana Salsabila Wicaksono
-              </h2>
-              <p className={bridesstyle.desc}>Putri Kelima Dari:</p>
-              <p className={bridesstyle.parent}>
-                Sonny Wicaksono & Krissantiana
-              </p>
+            <div className={bridesstyle.imagewrapper}>
+              <img
+                src={bridesprofil}
+                className={bridesstyle.image}
+                alt="bride"
+              />
+              <div className={bridesstyle.sunOverlay}></div>
+
+              <div className={bridesstyle.bridescontent}>
+                <h2 className={bridesstyle.fullname}>
+                  Safana Salsabila Wicaksono
+                </h2>
+                <p className={bridesstyle.desc}>Putri Kelima Dari:</p>
+                <p className={bridesstyle.parent}>
+                  Sonny Wicaksono & Krissantiana
+                </p>
+              </div>
             </div>
+            <h1 className={bridesstyle.name}>Safana</h1>
           </div>
           <GroomsComponent />
         </div>

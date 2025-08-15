@@ -12,6 +12,12 @@ import QRComponent from "./QR/QRComponent";
 import TimePage from "./TimePage/TimePage";
 import WishPage from "./Wishes/Wishes";
 import DateTimeComponent from "./DateTime/DateTimeComponent";
+import DresscodeComponent from "./Dresscode/DresscodeComponent";
+import GaleryComponent from "./GaleryComponent/GaleryComponent";
+import StoryComponent from "./Story/StoryComponent";
+import GiftComponent from "./Gift/GiftComponent";
+import ThankyouComponent from "./ThankYou/ThankyouComponent";
+import MusicComponent from "./Music/MusicComponent";
 
 function App() {
   const [guestData, setGuestData] = useState(null);
@@ -56,12 +62,15 @@ function App() {
         onOpen={() => setIsOpened(true)}
         isOpened={isOpened}
       />
-
+      <MusicComponent />
       {isOpened && (
         <>
           <DoaComponent />
           <BridesComponent />
           <DateTimeComponent />
+          <DresscodeComponent />
+          <GaleryComponent />
+          <StoryComponent />
           {guestData && guestData.invitation_id && (
             <QRComponent invitationId={guestData.invitation_id} />
           )}
@@ -69,6 +78,8 @@ function App() {
             data={guestData?.wishes || []}
             invitationId={guestData?.invitation_id}
           />
+          <GiftComponent />
+          <ThankyouComponent />
         </>
       )}
     </div>

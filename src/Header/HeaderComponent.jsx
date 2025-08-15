@@ -1,6 +1,7 @@
 import React from "react";
 import "./headerstyle.css";
 import logo from "../assets/logowed.png";
+import MusicComponent from "../Music/MusicComponent";
 
 class HeaderComponent extends React.Component {
   render() {
@@ -28,6 +29,7 @@ class HeaderComponent extends React.Component {
                 href="#"
                 className="invitation-button"
                 onClick={(e) => {
+                  window.dispatchEvent(new Event("startAudio"));
                   e.preventDefault();
                   if (onOpen) onOpen();
                 }}

@@ -1,0 +1,100 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 30px;
+  max-width: 430px;
+  margin: 0 auto;
+  height: fit-content;
+  background: url("../assets/bgphoto.png") center/cover no-repeat; /* replace with your QR background if needed */
+}
+
+.item {
+  display: flex;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Bodoni Moda", serif;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #feb902;
+}
+.marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  background-color: #feb902;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.line {
+  flex-grow: 1;
+  width: 2px;
+  background-color: #ccc;
+  margin-top: 0px;
+  min-height: 40px; /* this ensures the line has some space */
+}
+
+/* Tambahkan garis ke bawah dari titik */
+
+/* 
+.line {
+  width: 2px;
+  background-color: #ccc;
+  flex-grow: 1;
+  margin-top: 2px;
+} */
+
+.details {
+  flex: 1;
+  margin: 0;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Cinzel Decorative", serif;
+}
+
+.year {
+  color: white;
+  font-weight: bold;
+  margin-right: 8px;
+  font-size: 0.8rem;
+  font-family: "Cinzel Decorative", serif;
+}
+
+.box {
+  background-color: #f5f5f5;
+  padding: 12px;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    rgba(255, 140, 0, 0.5),
+    /* dark orange */ rgba(0, 0, 0, 0.2) /* black overlay */
+  );
+}
