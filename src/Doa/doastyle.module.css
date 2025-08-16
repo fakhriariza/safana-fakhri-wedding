@@ -77,6 +77,8 @@ body {
   font-size: 1rem;
   font-family: "Cormorant Garamond", serif;
   margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 
@@ -85,11 +87,11 @@ body {
   /* CSS khusus HP kecil */
 
   .doatitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .doatext {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 

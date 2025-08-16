@@ -24,6 +24,7 @@ body {
   width: 100%;
   max-width: 430px;
   margin: 0 auto;
+  height: fit-content;
   overflow: hidden; /* hides overflow caused by scale */
 }
 
@@ -33,7 +34,6 @@ body {
   max-width: 430px;
   height: fit-content;
   display: flex;
-  padding-bottom: 30px;
   flex-direction: column;
   transform-origin: bottom center; /* zoom from bottom */
 }
@@ -45,29 +45,24 @@ body {
 }
 
 .bridescontent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 90%;
-  padding: 20px 24px;
-  color: white;
-  z-index: 2;
-  text-align: center;
+  grid-area: 1 / 1; /* stack on top of image */
+  padding: 20px;
   border-radius: 20px;
+  text-align: right;
+  z-index: 2;
+  align-self: end;
+  margin-bottom: 20px;
+  margin-left: 20px; /* Push to bottom of the grid area */
+  background: rgba(255, 255, 255, 0.3); /* translucent */
+  backdrop-filter: blur(2px); /* actual blur */
+  -webkit-backdrop-filter: blur(10px);
+}
 
-  background: linear-gradient(
-    to right,
-    rgba(255, 165, 0, 0.5),
-    rgba(255, 165, 0, 0.1)
-  );
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  /* Optional blur behind text */
-  backdrop-filter: blur(6px);
+.imagewrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  grid-area: 1 / 1;
 }
 
 .name {
@@ -85,11 +80,11 @@ body {
 
 .fullname {
   z-index: 2;
-  color: white;
+  color: black;
   font-size: 2rem;
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
-  font-style: normal;
+  font-style: bold;
   margin: 0;
   margin-bottom: 10px;
   line-height: 1;
@@ -97,7 +92,7 @@ body {
 
 .desc {
   z-index: 2;
-  color: white;
+  color: black;
   font-size: 1.1rem;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
@@ -108,7 +103,7 @@ body {
 
 .parent {
   z-index: 2;
-  color: white;
+  color: black;
   font-size: 1.1rem;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
@@ -122,6 +117,7 @@ body {
   gap: 0;
   align-items: end;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .subtitle {
@@ -164,8 +160,9 @@ body {
 }
 
 .image {
-  z-index: 2;
-  width: 430px;
+  z-index: 0;
+  max-width: 430px;
+  width: 100vw;
   height: fit-content;
   filter: brightness(1.05) contrast(1.05); /* small boost */
 }
@@ -187,15 +184,26 @@ body {
   z-index: 1;
   color: white;
   margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .imagewrapper {
   position: relative;
-  width: 430px;
+  max-width: 430px;
+  width: 100vw;
   height: fit-content;
   overflow: hidden;
-  margin: 0 auto;
   box-shadow: 0 0 15px rgba(255, 183, 94, 0.3); /* warm glow */
+
+  display: grid;
+  place-items: center;
+}
+
+.grooms {
+  margin-top: 500px;
 }
 /* 
 .image {
@@ -223,11 +231,33 @@ body {
 
 /* HP kecil: sampai 401px */
 @media (max-width: 401px) {
-  /* CSS khusus HP kecil */
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .image {
+    z-index: 0;
+    max-width: 401px;
+    width: 100vw;
+  }
+
+  .sunOverlay {
+    max-width: 401px;
+    width: 100vw;
+  }
 }
 
 /* HP sedang: 402px sampai 429px */
 @media (min-width: 402px) and (max-width: 429px) {
+  .image {
+    z-index: 0;
+    max-width: 429px;
+    width: 100vw;
+  }
   /* CSS khusus HP sedang */
 }
 

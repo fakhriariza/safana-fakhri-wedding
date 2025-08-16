@@ -27,6 +27,9 @@ body {
   height: 100vh;
   background: url("../assets/fotohome.JPG") center/cover no-repeat;
   display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .wedding-header .overlay {
@@ -44,11 +47,16 @@ body {
   max-width: 430px;
   padding: 0 30px;
   text-align: center;
+  align-items: center;
 }
 
 .header-top {
   text-align: center;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-bottom {
@@ -66,7 +74,7 @@ body {
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: "Cinzel Decorative", serif;
   font-weight: 600;
   margin: 0;
@@ -79,17 +87,19 @@ body {
 .logo {
   width: 126px;
   height: 188px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .greeting {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Cormorant Garamond", serif;
   margin: 0;
 }
 
 .guest {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   margin: 0;
   margin-bottom: 20px;
@@ -121,25 +131,31 @@ body {
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 2.1rem !important;
     margin-bottom: 15px;
   }
 
   .subtitle {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .greeting {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   .guest {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
   }
 
   .header-content {
     margin-bottom: 60px;
+  }
+
+  .logo {
+    width: 95px;
+    height: 141px;
+    margin-top: 50px;
   }
 }
 
@@ -150,4 +166,10 @@ body {
 
 /* HP besar dan ke atas: 430px atau lebih */
 @media (min-width: 430px) {
+}
+
+@media (max-height: 724px) {
+  .title {
+    font-size: 2.1rem !important;
+  }
 }

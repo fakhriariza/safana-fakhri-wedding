@@ -35,9 +35,8 @@ class BridesComponent extends React.Component {
                 </p>
               </div>
             </div>
-            <h1 className={bridesstyle.name}>Safana</h1>
           </div>
-          <GroomsComponent />
+          <GroomsComponent className={bridesstyle.grooms} />
         </div>
       </div>
     );
