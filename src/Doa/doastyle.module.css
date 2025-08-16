@@ -60,12 +60,16 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .doacontent {
@@ -105,6 +109,8 @@ body {
 
   .doatitle {
     font-size: 1.2rem;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .doatext {

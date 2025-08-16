@@ -33,8 +33,27 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   transform-origin: bottom center; /* zoom from bottom */
+  justify-content: center;
+}
+
+.boxtop {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.boxbottom {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.boxVenue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
   justify-content: center;
 }
 
@@ -60,10 +79,10 @@ body {
     rgba(255, 140, 0, 0.5),
     /* dark orange */ rgba(0, 0, 0, 0.7) /* black overlay */
   );
-  align-items: center;
-  justify-content: baseline;
+  justify-content: center;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .name {
@@ -193,14 +212,18 @@ body {
 .acaraContainer {
   padding: 10px;
   color: white;
+  height: 90vw;
 }
 
 .acaraBox {
-  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .acaraTitle {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 8px;
   font-family: "Cinzel Decorative", serif;

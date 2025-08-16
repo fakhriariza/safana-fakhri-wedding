@@ -27,7 +27,7 @@ class BridesComponent extends React.Component {
               "animate__delay-4s"
             )}
           >
-            The Wedding of
+            Let's Meet:
           </h1>
           {/* <h2
             className={classNames(

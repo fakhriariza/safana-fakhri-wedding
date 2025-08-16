@@ -21,10 +21,10 @@ class DateTimeComponent extends React.Component {
                     <p className={style.acaraDetail}>
                       Sunday, August 31st 2025
                     </p>
-                    <p className={style.acaraDetail}>
+                    {/* <p className={style.acaraDetail}>
                       Graha Bhima Sakti, Pancoran
-                    </p>
-                    <a
+                    </p> */}
+                    {/* <a
                       href={MAPS_URL}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -34,9 +34,9 @@ class DateTimeComponent extends React.Component {
                         📍
                       </span>
                       <span>Open Maps</span>
-                    </a>
+                    </a> */}
 
-                    <p className={style.acaraTime}>07.30 WIB - Selesai</p>
+                    <p className={style.acaraTime}>07.30 WIB - 09.30 WIB</p>
                   </div>
                   <hr className={style.acaraSeparator} />
                   <div className={style.boxbottom}>
@@ -44,6 +44,24 @@ class DateTimeComponent extends React.Component {
                     <p className={style.acaraDetail}>
                       Sunday, August 31st 2025
                     </p>
+                    {/* <p className={style.acaraDetail}>
+                      Graha Bhima Sakti, Pancoran
+                    </p>
+                    <a
+                      href={MAPS_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={style.mapButton}
+                    >
+                      <span className={style.mapIcon} aria-hidden="true">
+                        📍
+                      </span>
+                      <span>Open Maps</span>
+                    </a> */}
+                    <p className={style.acaraTime}>10.30 - 13.00 WIB</p>
+                  </div>
+                  <div className={style.boxVenue}>
+                    <h2 className={style.acaraTitle}>Lokasi</h2>
                     <p className={style.acaraDetail}>
                       Graha Bhima Sakti, Pancoran
                     </p>
@@ -58,9 +76,7 @@ class DateTimeComponent extends React.Component {
                       </span>
                       <span>Open Maps</span>
                     </a>
-                    <p className={style.acaraTime}>10.30 - 13.00 WIB</p>
                   </div>
-                  <TimePage />
                 </div>
               </div>
             </div>
