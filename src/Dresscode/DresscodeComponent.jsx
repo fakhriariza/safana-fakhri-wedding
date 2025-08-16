@@ -14,8 +14,8 @@ class DresscodeComponent extends React.Component {
             <h2 className={style.doatitle}>Dresscode</h2>
             <img className={style.image} src={dc}></img>
             <h1 className={style.doatext}>
-              Your presence in black colors would beautifully harmonize with the
-              theme of our celebration
+              Your presence in black would beautifully harmonize with the theme
+              of our celebration
             </h1>
           </div>
         </div>

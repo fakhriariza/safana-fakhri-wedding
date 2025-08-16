@@ -25,7 +25,7 @@ body {
   width: 100vw;
   max-width: 430px;
   height: 100vh;
-  background: url("../assets/fotohome.JPG") center/cover no-repeat;
+  background: url("../assets/fotocover.png") center/cover no-repeat;
   display: flex;
   margin: 0;
   align-items: center;

@@ -2,11 +2,20 @@ import React from "react";
 import bridesstyle from "./grooms.module.css";
 import instagramLogo from "../assets/instagram_logo.png";
 import bridesprofil from "../assets/groomssquare.png";
+import "animate.css";
+import classNames from "classnames";
 
 class BridesComponent extends React.Component {
   render() {
     return (
-      <div className={bridesstyle.headerwrapper}>
+      <div
+        className={classNames(
+          bridesstyle.headerwrapper,
+          "animate__animated",
+          "animate__fadeIn",
+          "animate__delay-6s"
+        )}
+      >
         <div className={bridesstyle.header}>
           <div className={bridesstyle.content}>
             <div className={bridesstyle.imagewrapper}>
@@ -17,7 +26,14 @@ class BridesComponent extends React.Component {
               />
               <div className={bridesstyle.sunOverlay}></div>
 
-              <div className={bridesstyle.bridescontent}>
+              <div
+                className={classNames(
+                  bridesstyle.bridescontent,
+                  "animate__animated",
+                  "animate__fadeIn",
+                  "animate__delay-6s"
+                )}
+              >
                 <h2 className={bridesstyle.fullname}>
                   Muhammad Fakhri Dwi Ariza
                 </h2>

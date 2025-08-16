@@ -18,6 +18,7 @@ import StoryComponent from "./Story/StoryComponent";
 import GiftComponent from "./Gift/GiftComponent";
 import ThankyouComponent from "./ThankYou/ThankyouComponent";
 import MusicComponent from "./Music/MusicComponent";
+import DoaComponentTwo from "./DoaTwi/DoaComponentTwo";
 
 function App() {
   const [guestData, setGuestData] = useState(null);
@@ -65,7 +66,7 @@ function App() {
       <MusicComponent />
       {isOpened && (
         <>
-          <DoaComponent />
+          <DoaComponentTwo />
           <BridesComponent />
           <DateTimeComponent />
           <DresscodeComponent />

@@ -1,24 +1,43 @@
 import React from "react";
 import doastyle from "./doastyle.module.css";
 import doabg from "../assets/bgdoa.jpg";
+import bgdoasec from "../assets/bgdoasec.jpg";
+import "animate.css";
+import classNames from "classnames";
 
 class DoaComponent extends React.Component {
   render() {
     return (
-      <div className={doastyle.header}>
+      <div
+        className={classNames(
+          doastyle.header,
+          "animate__animated",
+          "animate__fadeIn",
+          "animate__delay-1s"
+        )}
+      >
         <div className={doastyle.overlaydoa}></div>
-
         <div className={doastyle.doacontent}>
           <div className={doastyle.topcontent}>
-            <h2 className={doastyle.doatext}>
-              “And among Allah signs is that Allah created for you from
-              yourselves spouses that you may find tranquility in them; and
-              Allah placed between you affection and mercy. Indeed, in that are
-              signs for a people who give thought.”
-            </h2>
-            <h1 className={doastyle.doatitle}>QS. Ar-Rum: 21</h1>
+            <img className={doastyle.image} src={doabg}></img>
+            <div
+              className={classNames(
+                doastyle.textContainer,
+                "animate__animated",
+                "animate__zoomIn",
+                "animate__delay-2s"
+              )}
+            >
+              <h2 className={doastyle.doatext}>
+                “And among Allah signs is that Allah created for you from
+                yourselves spouses that you may find tranquility in them; and
+                Allah placed between you affection and mercy. Indeed, in that
+                are signs for a people who give thought.”
+              </h2>
+              <h1 className={doastyle.doatitle}>QS. Ar-Rum: 21</h1>
+            </div>
+            <img className={doastyle.images} src={bgdoasec}></img>
           </div>
-          <img className={doastyle.image} src={doabg}></img>
         </div>
       </div>
     );

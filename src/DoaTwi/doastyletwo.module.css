@@ -1,0 +1,128 @@
+/*default*/
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  max-width: 430px;
+  height: fit-content;
+  display: flex;
+}
+
+.image {
+  width: 100vw;
+  height: 35vh;
+  max-width: 430px;
+  max-height: 35vh;
+  height: auto; /* keep ratio */
+  object-fit: cover; /* zoom & crop */
+  object-position: center;
+}
+
+.images {
+  width: 100vw;
+  max-width: 430px;
+  max-height: 100vh;
+  height: 100vh;
+  height: auto; /* keep ratio */
+  object-fit: cover; /* zoom & crop */
+  object-position: center;
+  margin-top: auto;
+}
+
+.overlaydoa {
+  position: absolute;
+  inset: 0;
+}
+
+.topcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.textContainer {
+  position: absolute; /* stack on top of the image */
+  left: 50%; /* center horizontally */
+  transform: translate(-50%, -95%);
+  color: black; /* make text readable */
+  text-align: center;
+  z-index: 2;
+  width: 400px;
+}
+
+.doacontent {
+  position: relative;
+  z-index: 1;
+  color: black;
+  max-width: 430px;
+  display: flex;
+  max-height: fit-content;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.doatitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.doatext {
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+/* HP kecil: sampai 401px */
+@media (max-width: 401px) {
+  /* CSS khusus HP kecil */
+
+  .doatitle {
+    font-size: 1.2rem;
+  }
+
+  .doatext {
+    font-size: 0.8rem;
+  }
+}
+
+/* HP sedang: 402px sampai 429px */
+@media (min-width: 402px) and (max-width: 429px) {
+  .image {
+    width: 100vw;
+    max-width: 429px;
+  }
+}
+
+/* HP besar dan ke atas: 430px atau lebih */
+@media (min-width: 430px) {
+}
