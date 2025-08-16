@@ -1,7 +1,7 @@
 import React from "react";
 import bridesstyle from "./brides.module.css";
 import instagramLogo from "../assets/instagram_logo.png";
-import bridesprofil from "../assets/safana.png";
+import bridesprofil from "../assets/bridespic.jpg";
 import GroomsComponent from "../Grooms/GroomsComponent";
 import "animate.css";
 import classNames from "classnames";
@@ -29,7 +29,7 @@ class BridesComponent extends React.Component {
           >
             The Wedding of
           </h1>
-          <h2
+          {/* <h2
             className={classNames(
               bridesstyle.subtitle,
               "animate__animated",
@@ -40,7 +40,7 @@ class BridesComponent extends React.Component {
             With the blessing of the almighty Allah S.W.T., it would be our
             utmost joy to have your presence bestowed upon our cherished wedding
             of
-          </h2>
+          </h2> */}
           <div
             className={classNames(
               bridesstyle.content,
@@ -57,14 +57,19 @@ class BridesComponent extends React.Component {
               />
               <div className={bridesstyle.sunOverlay}></div>
 
+              <h1 className={bridesstyle.bridesTitle}>THE BRIDE</h1>
+
               <div className={bridesstyle.bridescontent}>
+                <p className={bridesstyle.birth}>27 APRIL 1999</p>
                 <h2 className={bridesstyle.fullname}>
                   Safana Salsabila Wicaksono
                 </h2>
-                <p className={bridesstyle.desc}>Putri Kelima Dari:</p>
-                <p className={bridesstyle.parent}>
-                  Sonny Wicaksono & Krissantiana
+                <p className={bridesstyle.desc}>
+                  PUTRI KELIMA DARI BPK. SONNY WICAKSONO & IBU KRISSANTIANA
                 </p>
+                {/* <p className={bridesstyle.parent}>
+                  Sonny Wicaksono & Krissantiana
+                </p> */}
               </div>
             </div>
           </div>

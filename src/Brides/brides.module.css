@@ -45,13 +45,26 @@ body {
 }
 
 .bridescontent {
-  grid-area: 1 / 1; /* stack on top of image */
+  grid-area: 1 / 1;
   padding: 20px;
   border-radius: 20px;
-  text-align: right;
+  text-align: left;
   z-index: 2;
-  margin-bottom: 20px;
-  padding: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.bridesTitle {
+  position: absolute;
+  top: 20px; /* distance from top */
+  left: 30px; /* distance from left */
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  z-index: 3;
+  color: #feb902;
 }
 
 .imagewrapper img {
@@ -78,22 +91,24 @@ body {
   z-index: 2;
   color: black;
   font-size: 1.5rem;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-style: bold;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   line-height: 1;
+  margin-top: 10px;
 }
 
 .desc {
   z-index: 2;
   color: black;
-  font-size: 0.9rem;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
+  font-size: 0.7rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-style: normal;
   margin: 0;
+  margin-top: 10px;
   line-height: 1;
 }
 
@@ -101,7 +116,7 @@ body {
   z-index: 2;
   color: black;
   font-size: 0.9rem;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
   margin: 0;
@@ -161,6 +176,7 @@ body {
   width: 100vw;
   height: fit-content;
   filter: brightness(1.05) contrast(1.05); /* small boost */
+  display: block;
 }
 
 .title {
@@ -169,8 +185,8 @@ body {
   font-size: 3rem;
   z-index: 1;
   color: #feb902;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .subtitle {
@@ -194,7 +210,7 @@ body {
   overflow: hidden;
   box-shadow: 0 0 15px rgba(255, 183, 94, 0.3); /* warm glow */
 
-  display: grid;
+  display: inline-block;
   place-items: center;
 }
 
@@ -214,15 +230,19 @@ body {
 .sunOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top right,
-    rgba(255, 140, 0, 0.45),
-    /* deep orange, semi transparan */ rgba(255, 200, 100, 0.3),
-    /* peachy orange, soft */ rgba(255, 165, 0, 0.15),
-    /* soft orange */ rgba(255, 165, 0, 0) /* fade to transparent */
-  );
   pointer-events: none;
   z-index: 1;
+}
+
+.birth {
+  z-index: 2;
+  color: black;
+  font-size: 0.8rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  line-height: 1;
 }
 
 /* HP kecil: sampai 401px */
