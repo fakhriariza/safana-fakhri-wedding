@@ -2,25 +2,40 @@ import styles from "./timeline.module.css";
 
 const stories = [
   {
-    year: "2020",
-    title: "Started College",
+    year: "2019",
+    title: "The Beginning",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "As a shared passion for social values, they met in an education voluntary community. He, as the founder, she as the new member. They talked for the first time, and they knew they met The One. They dived into conversation like they meet of each other missing home. It's probably right ---when you know, you just know.",
   },
   {
-    year: "2021",
-    title: "Internship",
-    description: "Worked as a frontend intern and built a dashboard UI.",
+    year: "2019",
+    title: "Cliked",
+    description:
+      "Synced in the same frequency; Intrigued in the same social-politics-even religion values; and having many same of interests, made they share the same feeling. It was different, it was love...",
   },
   {
-    year: "2023",
-    title: "Graduation",
-    description: "Completed my degree with honors and distinction.",
+    year: "",
+    title: "Love n Let Go",
+    description:
+      "- Love always matter, and that's why loving can hurt. During pandemic, he was in Bandung, she was in Jakarta. Everything felt so wrong. They got lost contact until...",
   },
   {
-    year: "2024",
-    title: "First Job",
-    description: "Joined Tech Co. as a full-time frontend developer.",
+    year: "",
+    title: "Reunited",
+    description:
+      "- ..he sent a very long email, a message that she prayed for---after being separated for a year. The hearts know what it wants. And they, committed to keep this relationship for marriage.",
+  },
+  {
+    year: "",
+    title: "Ups n Downs",
+    description:
+      "- Love always have to build and rebuild. Love never went smoothly, there were ups and downs. They lost contact again, in a week, in months. But Gmail and Google Spreadsheet, always be their messenger. Thanks for the random column and row for keep them connected.",
+  },
+  {
+    year: "",
+    title: "The Vow",
+    description:
+      "- May 4, they finally had the engagement, in front of their families and their loved ones. - Aug 31, inshaAllah, that day will becoming the beginning of their forever long-life journey. Would you please to come and have the joy on their special day?",
   },
 ];
 
