@@ -21,9 +21,8 @@ body {
 }
 
 .headerwrapper {
-  width: 100%;
+  width: 100vw;
   max-width: 430px;
-  margin: 0 auto;
   overflow: hidden; /* hides overflow caused by scale */
 }
 
@@ -230,12 +229,35 @@ body {
 
 /* HP kecil: sampai 401px */
 @media (max-width: 401px) {
-  /* CSS khusus HP kecil */
+  .bridescontent {
+    width: 350px;
+  }
+
+  .header {
+    max-width: 401px;
+  }
+
+  .headerwrapper {
+    width: 100vw;
+    max-width: 401px;
+  }
 }
 
 /* HP sedang: 402px sampai 429px */
 @media (min-width: 402px) and (max-width: 429px) {
-  /* CSS khusus HP sedang */
+  .bridescontent {
+    width: 360px;
+  }
+
+  .header {
+    width: 100vw;
+    max-width: 429px;
+  }
+
+  .headerwrapper {
+    width: 100vw;
+    max-width: 429px;
+  }
 }
 
 /* HP besar dan ke atas: 430px atau lebih */
