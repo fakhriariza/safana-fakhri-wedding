@@ -8,7 +8,7 @@ const stories = [
     year: "2019",
     title: "The Beginning",
     description:
-      "As a shared passion for social values, they met in an education voluntary community. He, as the founder, she as the new member. They talked for the first time, and they knew they met The One. They dived into conversation like they meet of each other missing home. It's probably right ---when you know, you just know.",
+      "As a shared passion for social values, they met in Kakak Asuh, an education voluntary community. He, as the founder, she as the new member. They talked for the first time, and they knew they met The One. They dived into conversation like they meet of each other missing home. It's probably right ---when you know, you just know.",
   },
   {
     year: "2019",

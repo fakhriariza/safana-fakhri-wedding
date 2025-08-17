@@ -9,19 +9,21 @@ function WishPage({ data, invitationId }) {
   const [wishList, setWishList] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  // Fetch wishes from API or fallback data
   const fetchWishes = async () => {
     try {
       const res = await api.get("/guests/wishes");
       setWishList(res.data);
     } catch (err) {
       console.error("Failed to load wishes", err);
-      setWishList(data); // fallback
+      if (!wishList.length) setWishList(data); // fallback only if empty
     }
   };
 
   // Initialize AOS once
   useEffect(() => {
     AOS.init({ duration: 1200, once: false, easing: "ease-out-cubic" });
+    fetchWishes();
   }, []);
 
   // Refresh AOS whenever wishList changes
@@ -29,26 +31,38 @@ function WishPage({ data, invitationId }) {
     AOS.refresh();
   }, [wishList]);
 
+  // Handle sending a wish
   const handleSend = async () => {
     if (!text.trim()) return;
     setLoading(true);
+
+    // Optimistic update: show new wish immediately
+    const newWish = {
+      id: Date.now(), // temporary ID
+      title: "You",
+      message: text,
+      time: new Date(),
+    };
+    setWishList((prev) => [newWish, ...prev]);
+    setText("");
+
     try {
       const res = await api.post(`/guests/wishes/${invitationId}`, {
         wishes: text,
       });
 
-      if (res.status === 200) {
-        alert("Wish sent!");
-        setText("");
-        fetchWishes();
-      } else {
+      if (res.status !== 200) {
         alert("Failed to send wish");
+        // Revert optimistic update if API fails
+        setWishList((prev) => prev.filter((wish) => wish.id !== newWish.id));
       }
     } catch (err) {
       console.error("Error sending wish", err);
       alert("Something went wrong");
+      setWishList((prev) => prev.filter((wish) => wish.id !== newWish.id));
     } finally {
       setLoading(false);
+      fetchWishes(); // Sync with server
     }
   };
 
