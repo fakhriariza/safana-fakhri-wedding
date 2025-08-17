@@ -144,13 +144,8 @@
 
 /* HP sedang: 402px sampai 429px */
 @media (min-width: 402px) and (max-width: 429px) {
-  .image {
-    width: 100vw;
-    max-width: 429px;
-  }
-
   .timeline {
-    max-width: 429px;
+    max-width: 405px;
     width: 100vw;
   }
 
