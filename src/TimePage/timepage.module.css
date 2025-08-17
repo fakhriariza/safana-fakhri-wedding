@@ -6,7 +6,6 @@
   height: auto;
   display: flex;
   align-items: center;
-  padding: 40px 0;
 }
 
 .overlaydoa {
@@ -34,7 +33,7 @@
 }
 
 .doatext {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Cormorant Garamond", serif;
   margin: 0 0 20px;
 }
@@ -97,7 +96,7 @@
   }
 
   .doatext {
-    font-size: 0.8rem;
+    font-size: 1.8rem;
   }
 
   .dateText {

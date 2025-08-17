@@ -19,6 +19,7 @@ import GiftComponent from "./Gift/GiftComponent";
 import ThankyouComponent from "./ThankYou/ThankyouComponent";
 import MusicComponent from "./Music/MusicComponent";
 import DoaComponentTwo from "./DoaTwi/DoaComponentTwo";
+import CountdownComponent from "./Countdown/CountdownComponent";
 
 function App() {
   const [guestData, setGuestData] = useState(null);
@@ -69,6 +70,7 @@ function App() {
           <DoaComponentTwo />
           <BridesComponent />
           <DateTimeComponent />
+          <CountdownComponent />
           <DresscodeComponent />
           <GaleryComponent />
           <StoryComponent />

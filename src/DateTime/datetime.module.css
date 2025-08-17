@@ -53,7 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 100px;
   justify-content: center;
 }
 
@@ -83,6 +83,12 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+/* Animate with AOS */
+:global(.aos-animate) {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .name {
@@ -212,7 +218,6 @@ body {
 .acaraContainer {
   padding: 10px;
   color: white;
-  height: 90vw;
 }
 
 .acaraBox {
@@ -223,7 +228,7 @@ body {
 }
 
 .acaraTitle {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 8px;
   font-family: "Cinzel Decorative", serif;
@@ -281,6 +286,17 @@ body {
   font-size: 18px;
 }
 
+[data-aos] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* HP kecil: sampai 401px */
 @media (max-width: 401px) {
   .bridescontent {
@@ -294,6 +310,14 @@ body {
   .headerwrapper {
     width: 100vw;
     max-width: 401px;
+  }
+
+  .acaraTitle {
+    font-size: 2rem;
+  }
+
+  .acaraDetail {
+    font-size: 1.2rem;
   }
 }
 
@@ -311,6 +335,14 @@ body {
   .headerwrapper {
     width: 100vw;
     max-width: 429px;
+  }
+
+  .acaraTitle {
+    font-size: 2rem;
+  }
+
+  .acaraDetail {
+    font-size: 1.2rem;
   }
 }
 

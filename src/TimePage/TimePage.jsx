@@ -35,7 +35,8 @@ class TimePage extends React.Component {
     const secs = Math.floor((diff / 1000) % 60);
 
     this.setState({
-      countdownText: `${days} Days ${hours} Hrs ${mins} Mins ${secs} Sec To Go`,
+      countdownText: `${days} Days ${hours} Hrs ${mins} Mins ${secs} Sec
+      To Go`,
     });
   };
 
@@ -44,10 +45,6 @@ class TimePage extends React.Component {
       <div className={doastyle.header}>
         <div className={doastyle.doacontent}>
           <div style={{ position: "relative", marginBottom: "20px" }}></div>
-
-          <h3 className={doastyle.doatitle} style={{ marginBottom: "10px" }}>
-            Countdown
-          </h3>
           <p className={doastyle.doatext}>{this.state.countdownText}</p>
           <a
             href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Safana+%26+Fakhri+Wedding+Invitation&dates=20250831T003000Z/20250831T060000Z&details=Dengan+bahagia+kami+mengundang+Anda+ke+pernikahan+kami.&location=graha+bhima+sakti"
