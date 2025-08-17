@@ -1,86 +1,100 @@
-import React from "react";
+import React, { Component } from "react";
 import bridesstyle from "./brides.module.css";
 import instagramLogo from "../assets/instagram_logo.png";
 import bridesprofil from "../assets/bridespic.jpg";
 import GroomsComponent from "../Grooms/GroomsComponent";
-import "animate.css";
 import classNames from "classnames";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-class BridesComponent extends React.Component {
+class BridesComponent extends Component {
+  componentDidMount() {
+    AOS.init({
+      duration: 1000,
+      once: false, // animations repeat on scroll
+    });
+
+    // Ensure AOS refreshes after DOM is ready
+    setTimeout(() => {
+      AOS.refreshHard();
+    }, 100);
+  }
+
   render() {
     return (
-      <div
-        className={classNames(
-          bridesstyle.headerwrapper,
-          "animate__animated",
-          "animate__fadeInDown",
-          "animate__delay-3s"
-        )}
-      >
-        <div className={classNames(bridesstyle.header)}>
+      <div className={bridesstyle.headerwrapper}>
+        <div className={bridesstyle.header}>
           <div className={bridesstyle.overlaybrides}></div>
+
           <h1
-            className={classNames(
-              bridesstyle.title,
-              "animate__animated",
-              "animate__fadeIn",
-              "animate__delay-4s"
-            )}
+            className={bridesstyle.title}
+            data-aos="fade-down"
+            data-aos-delay="300"
           >
             Let's Meet:
           </h1>
-          {/* <h2
-            className={classNames(
-              bridesstyle.subtitle,
-              "animate__animated",
-              "animate__fadeIn",
-              "animate__delay-4s"
-            )}
-          >
-            With the blessing of the almighty Allah S.W.T., it would be our
-            utmost joy to have your presence bestowed upon our cherished wedding
-            of
-          </h2> */}
+
           <div
-            className={classNames(
-              bridesstyle.content,
-              "animate__animated",
-              "animate__fadeIn",
-              "animate__delay-5s"
-            )}
+            className={bridesstyle.content}
+            data-aos="fade-up"
+            data-aos-delay="500"
           >
             <div className={bridesstyle.imagewrapper}>
               <img
                 src={bridesprofil}
                 className={bridesstyle.image}
                 alt="bride"
+                data-aos="zoom-in"
+                data-aos-delay="700"
               />
-              <div className={bridesstyle.sunOverlay}></div>
+              <div
+                className={bridesstyle.sunOverlay}
+                data-aos="fade-in"
+                data-aos-delay="800"
+              ></div>
 
-              <h1 className={bridesstyle.bridesTitle}>THE BRIDE</h1>
+              <h1
+                className={bridesstyle.bridesTitle}
+                data-aos="fade-up"
+                data-aos-delay="900"
+              >
+                THE BRIDE
+              </h1>
 
-              <div className={bridesstyle.bridescontent}>
-                <p className={bridesstyle.birth}>27 APRIL 1999</p>
-                <h2 className={bridesstyle.fullname}>
+              <div
+                className={bridesstyle.bridescontent}
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <p
+                  className={bridesstyle.birth}
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  27 APRIL 1999
+                </p>
+                <h2
+                  className={bridesstyle.fullname}
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
                   Safana Salsabila Wicaksono
                 </h2>
-                <p className={bridesstyle.desc}>
+                <p
+                  className={bridesstyle.desc}
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
                   PUTRI KELIMA DARI BPK. SONNY WICAKSONO & IBU KRISSANTIANA
                 </p>
-                {/* <p className={bridesstyle.parent}>
-                  Sonny Wicaksono & Krissantiana
-                </p> */}
               </div>
             </div>
           </div>
+
           <GroomsComponent
-            className={classNames(
-              bridesstyle.grooms,
-              "animate__animated",
-              "animate__fadeIn",
-              "animate__delay-6s",
-              "animate__hidden"
-            )}
+            className={bridesstyle.grooms}
+            data-aos="fade-up"
+            data-aos-delay="1400"
           />
         </div>
       </div>
