@@ -86,18 +86,15 @@ body {
 .image {
   width: 200px;
   height: 200px;
-  margin-top: 10px;
-  margin-bottom: 10px;
   z-index: 2;
 }
 
 .box {
   background-color: #f5f5f5;
-  padding: 12px;
   border-radius: 20px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   font-size: 14px;
-  line-height: 1.5;
+  padding: 12px;
   color: white;
   font-family: "Cormorant Garamond", serif;
   font-weight: bold;
@@ -106,8 +103,14 @@ body {
     rgba(255, 140, 0, 0.5),
     /* dark orange */ rgba(0, 0, 0, 0.2) /* black overlay */
   );
-  width: 380px;
+  width: 70vw;
   margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box p {
+  font-size: 1.5rem;
 }
 
 [data-aos] {
@@ -124,9 +127,9 @@ body {
 .bankRow {
   display: flex;
   align-items: center;
-  gap: 0;
+  gap: 20px;
   justify-content: center;
-  max-width: 420px;
+  max-width: fit-content;
 }
 
 .bankLogo {
@@ -136,7 +139,6 @@ body {
 }
 
 .accountNumber {
-  flex: 1;
   font-size: 1.2rem;
   font-weight: 600;
   color: white;

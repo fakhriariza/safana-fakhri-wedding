@@ -3,7 +3,6 @@
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 12px; /* kasih jarak antar item lebih enak */
   max-width: 430px;
-  margin: 0 auto;
   padding: 20px 10px;
   background: url("../assets/draperybrides.png") center/cover no-repeat;
 }

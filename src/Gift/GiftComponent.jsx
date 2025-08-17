@@ -44,7 +44,7 @@ class GiftComponent extends React.Component {
               data-aos="fade-right"
               data-aos-delay="500"
             >
-              <p>"Muhammad Fakhri"</p>
+              <p>Muhammad Fakhri Dwi Ariza</p>
               <BankRow logo={bcaLogo} accountNumber="1234 5678 9012 3456" />
             </div>
 
@@ -53,7 +53,8 @@ class GiftComponent extends React.Component {
               data-aos="fade-left"
               data-aos-delay="700"
             >
-              <p>"Safana Salsabila"</p>
+              <p>Safana Salsabila Wicaksono</p>
+              <BankRow logo={bcaLogo} accountNumber="1234 5678 9012 3456" />
             </div>
           </div>
         </div>

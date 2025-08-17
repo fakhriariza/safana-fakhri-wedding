@@ -25,14 +25,13 @@ body {
   width: 100vw;
   max-width: 430px;
   height: 100vh;
-  background: url("../assets/fotohome.JPG") center/cover no-repeat;
+  background: url("../assets/coverwedding3.jpeg") center/cover no-repeat;
   display: flex;
 }
 
 .wedding-header .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .header-content {
@@ -44,11 +43,14 @@ body {
   max-width: 430px;
   padding: 0 30px;
   text-align: center;
+  width: 100vw;
+  max-width: 430px;
 }
 
 .header-top {
   text-align: center;
   z-index: 1;
+  justify-content: center;
 }
 
 .header-bottom {
@@ -58,27 +60,27 @@ body {
 }
 
 .subtitle {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: "Cormorant Garamond", serif;
   margin: 0;
   font-weight: 400;
-  color: white;
+  color: black;
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-family: "Cinzel Decorative", serif;
   font-weight: 600;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 0.9;
-  margin-top: 10px;
-  color: #feb902;
+  margin-top: 5px;
+  color: black;
 }
 
 .logo {
-  width: 126px;
-  height: 188px;
+  width: 150px;
+  height: fit-content;
 }
 
 .greeting {
@@ -132,12 +134,12 @@ body {
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .greeting {
@@ -151,6 +153,13 @@ body {
 
   .header-content {
     margin-bottom: 60px;
+    width: 100vw;
+    max-width: 429px;
+  }
+
+  .logo {
+    width: 110px;
+    height: fit-content;
   }
 }
 
@@ -158,6 +167,11 @@ body {
 @media (min-width: 402px) and (max-width: 429px) {
   .subtitle {
     font-size: 1rem;
+  }
+
+  .header-content {
+    width: 100vw;
+    max-width: 429px;
   }
 }
 

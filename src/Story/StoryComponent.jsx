@@ -10,7 +10,7 @@ const stories = [
     year: "2019",
     title: "The Beginning",
     description:
-      "As a shared passion for social values, we met in Kakak Asuh. He, as the founder, she as the new member. We talked for the first time, and we knew we met The One. We dived into conversation like we meet of each other missing home. It's probably right ---when you know, you know.",
+      "As a shared passion for social values, we met in Kakak Asuh, an education voluntary community. He, as the founder, she as the new member. We talked for the first time, and we knew we met The One. We dived into conversation like we meet of each other missing home. It's probably right ---when you know, you know.",
   },
   {
     year: "2019",
@@ -28,21 +28,23 @@ const stories = [
     year: "2022",
     title: "The Reunited",
     description:
-      "- ...he wrote a very long email, a message that she secretly prayed for---after being separated for a year. The hearts know what it wants. And we, committed to restart for the more mature re",
+      "- .he wrote a very long email, a message that she secretly prayed for---after being separated for a year. The heart knows what it wants. Relationship began more mature.",
   },
   {
-    year: "",
+    year: "2023-2024",
     title: "Ups n Downs",
     description:
-      "- Love always have to build and rebuild. Love never went smoothly, there were ups and downs. They lost contact again, in a week, in months. But Gmail and Google Spreadsheet, always be their messenger. Thanks for the random column and row for keep them connected.",
+      "- Love always have to build and rebuild. Each time we got lost contact, Gmail and Google Spreadsheet always be our messenger. Thanks for the random column and row for keep them connected.",
   },
   {
     year: "2025",
     title: "The Vow",
     image: lamaran,
     image2: foto2,
+    description2:
+      "- Aug 31, inshaAllah, we will begin our forever long-life journey. Would you please to come and have the joy on our special day?",
     description:
-      "- May 4, they finally had the engagement, in front of their families and their loved ones. - Aug 31, inshaAllah, that day will becoming the beginning of their forever long-life journey. Would you please to come and have the joy on their special day?",
+      "- May 4, we finally got engaged, surrounded by our families and loved ones.",
   },
 ];
 
@@ -82,6 +84,7 @@ const StoryComponent = () => {
                 <img className={styles.image} src={story.image2}></img>
               </div>
               <p>{story.description}</p>
+              <p>{story.description2}</p>
             </div>
           </div>
         </div>

@@ -23,6 +23,7 @@
   border: 1px solid #ccc;
   border-radius: 6px;
   margin-bottom: 10px;
+  background: transparent;
 }
 
 .button_send {

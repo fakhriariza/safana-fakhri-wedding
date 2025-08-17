@@ -43,7 +43,7 @@ class HeaderComponent extends React.Component {
                 "animate__delay-2s"
               )}
             >
-              Safana &amp; Fakhri
+              Safana &amp; <br></br>Fakhri
             </h1>
           </div>
 

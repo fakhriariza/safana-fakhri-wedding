@@ -53,7 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 280px;
   justify-content: center;
 }
 
@@ -225,6 +225,8 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .acaraTitle {
@@ -233,19 +235,21 @@ body {
   margin-bottom: 8px;
   font-family: "Cinzel Decorative", serif;
   margin: 0;
+  font-weight: 600;
+  text-align: left;
 }
 
 .acaraDetail {
-  font-size: 1.5rem;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 900;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   margin: 0;
 }
 
 .acaraTime {
-  font-size: 1.2rem;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
+  font-size: 0.8.rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   margin: 0;
 }
 

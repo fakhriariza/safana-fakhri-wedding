@@ -31,9 +31,7 @@ export default function DateTimeComponent() {
                   data-aos-delay="100"
                 >
                   <h2 className={style.acaraTitle}>Akad Nikah</h2>
-                  <p className={style.acaraDetail}>
-                    • Sunday, August 31st 2025
-                  </p>
+                  <p className={style.acaraDetail}>• Sunday, August 31 2025</p>
                   <p className={style.acaraTime}>• 07.30 WIB - 09.30 WIB</p>
                 </div>
 
@@ -49,10 +47,8 @@ export default function DateTimeComponent() {
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
-                  <h2 className={style.acaraTitle}>Resepsi</h2>
-                  <p className={style.acaraDetail}>
-                    • Sunday, August 31st 2025
-                  </p>
+                  <h2 className={style.acaraTitle}>Reception</h2>
+                  <p className={style.acaraDetail}>• Sunday, August 31 2025</p>
                   <p className={style.acaraTime}>• 10.30 - 13.00 WIB</p>
                 </div>
 
@@ -62,7 +58,7 @@ export default function DateTimeComponent() {
                   data-aos="fade-up"
                   data-aos-delay="500"
                 >
-                  <h2 className={style.acaraTitle}>Lokasi</h2>
+                  <h2 className={style.acaraTitle}>Location</h2>
                   <p className={style.acaraDetail}>
                     Balai Prajurit Graha Bhima Sakti, <br />
                     Pancoran, Jakarta Selatan

@@ -25,7 +25,7 @@ body {
   width: 100vw;
   max-width: 430px;
   height: 100vh;
-  background: url("../assets/fotocover.png") center/cover no-repeat;
+  background: url("../assets/coverweding1.jpeg") center/cover no-repeat;
   display: flex;
   margin: 0;
   align-items: center;
@@ -66,7 +66,7 @@ body {
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Cormorant Garamond", serif;
   margin: 0;
   font-weight: 400;
@@ -74,7 +74,7 @@ body {
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-family: "Cinzel Decorative", serif;
   font-weight: 600;
   margin: 0;
@@ -85,8 +85,8 @@ body {
 }
 
 .logo {
-  width: 126px;
-  height: 188px;
+  width: 95px;
+  height: 141px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -95,6 +95,7 @@ body {
   font-size: 2rem;
   font-family: "Cormorant Garamond", serif;
   margin: 0;
+  color: white;
 }
 
 .guest {
@@ -102,6 +103,7 @@ body {
   font-size: 2rem;
   font-weight: 500;
   margin: 0;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -131,12 +133,12 @@ body {
   }
 
   .title {
-    font-size: 2.1rem !important;
+    font-size: 1.8rem !important;
     margin-bottom: 15px;
   }
 
   .subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .greeting {
@@ -153,8 +155,8 @@ body {
   }
 
   .logo {
-    width: 95px;
-    height: 141px;
+    width: 63px;
+    height: 94px;
     margin-top: 50px;
   }
 }

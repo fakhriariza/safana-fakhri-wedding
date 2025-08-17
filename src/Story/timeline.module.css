@@ -6,6 +6,7 @@
   padding-right: 16px;
   padding-bottom: 30px;
   max-width: 430px;
+  width: 100vw;
   margin: 0 auto;
   height: fit-content;
   background: url("../assets/bgphoto.png") center/cover no-repeat; /* replace with your QR background if needed */
@@ -83,6 +84,7 @@
   margin-top: 0;
   text-align: left;
   font-family: "Cinzel Decorative", serif;
+  color: white;
 }
 
 .year {
@@ -122,4 +124,39 @@
     /* dark orange */ rgba(0, 0, 0, 0.2) /* black overlay */
   );
   width: 380px; /* or any value you want */
+  text-align: left;
+}
+
+/* HP kecil: sampai 401px */
+@media (max-width: 401px) {
+  /* CSS khusus HP kecil */
+  .timeline {
+    max-width: 401px;
+    width: 100vw;
+  }
+
+  .box {
+    width: 330px;
+  }
+}
+
+/* HP sedang: 402px sampai 429px */
+@media (min-width: 402px) and (max-width: 429px) {
+  .image {
+    width: 100vw;
+    max-width: 429px;
+  }
+
+  .timeline {
+    max-width: 429px;
+    width: 100vw;
+  }
+
+  .box {
+    width: 330px;
+  }
+}
+
+/* HP besar dan ke atas: 430px atau lebih */
+@media (min-width: 430px) {
 }

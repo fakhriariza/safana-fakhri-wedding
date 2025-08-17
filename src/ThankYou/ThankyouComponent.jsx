@@ -1,6 +1,6 @@
 import React from "react";
 import "./headerstyle.css";
-import logo from "../assets/logowed.png";
+import logo from "../assets/logoblack.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -35,7 +35,8 @@ class ThankyouComponent extends React.Component {
             </h1>
 
             <p className="subtitle" data-aos="fade-up" data-aos-delay="600">
-              We appreciate your presence and blessings on our special day.
+              We appreciate your presence and blessings <br></br>on our special
+              day.
             </p>
           </div>
         </div>

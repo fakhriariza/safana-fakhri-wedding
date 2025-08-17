@@ -74,7 +74,7 @@ function WishPage({ data, invitationId }) {
         data-aos-duration="1000"
         className={wishstyle.title_wish}
       >
-        Wishes <br /> & Words of Love
+        Wishes & Words <br /> of Love
       </h1>
 
       <textarea
