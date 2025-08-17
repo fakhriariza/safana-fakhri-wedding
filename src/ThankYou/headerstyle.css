@@ -79,8 +79,11 @@ body {
 }
 
 .logo {
-  width: 150px;
-  height: 225px;
+  width: 110px;
+  height: 160px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
 }
 
 .greeting {
@@ -158,8 +161,8 @@ body {
   }
 
   .logo {
-    width: 110px;
-    height: fit-content;
+    width: 70px;
+    height: 101px;
   }
 }
 

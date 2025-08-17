@@ -22,62 +22,60 @@ export default function DateTimeComponent() {
         <div className={style.overlaybrides}></div>
         <div className={style.content}>
           <div className={classNames(style.bridescontent)}>
-            <div className={style.acaraContainer}>
-              <div className={style.acaraBox}>
-                {/* Akad Nikah */}
-                <div
-                  className={style.boxtop}
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <h2 className={style.acaraTitle}>Akad Nikah</h2>
-                  <p className={style.acaraDetail}>• Sunday, August 31 2025</p>
-                  <p className={style.acaraTime}>• 07.30 - 09.30 WIB</p>
-                </div>
-
-                <hr
-                  className={style.acaraSeparator}
-                  data-aos="zoom-in"
-                  data-aos-delay="200"
-                />
-
-                {/* Resepsi */}
-                <div
-                  className={style.boxbottom}
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <h2 className={style.acaraTitle}>Reception</h2>
-                  <p className={style.acaraDetail}>• Sunday, August 31 2025</p>
-                  <p className={style.acaraTime}>• 10.30 - 13.00 WIB</p>
-                </div>
-
-                {/* Lokasi */}
-                <div
-                  className={style.boxVenue}
-                  data-aos="fade-up"
-                  data-aos-delay="500"
-                >
-                  <h2 className={style.acaraTitle}>Location</h2>
-                  <p className={style.acaraDetail}>
-                    Balai Prajurit Graha Bhima Sakti, <br />
-                    Pancoran, Jakarta Selatan
-                  </p>
-                  <a
-                    href={MAPS_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={style.mapButton}
-                    data-aos="zoom-in"
-                    data-aos-delay="700"
-                  >
-                    <span className={style.mapIcon} aria-hidden="true">
-                      📍
-                    </span>
-                    <span>Open Maps</span>
-                  </a>
-                </div>
+            {/* Akad Nikah */}
+            <div className={style.atas}>
+              <div
+                className={style.boxtop}
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <h2 className={style.acaraTitle}>Akad Nikah</h2>
+                <p className={style.acaraDetail}>• Sunday, August 31 2025</p>
+                <p className={style.acaraTime}>• 07.30 - 09.30 WIB</p>
               </div>
+
+              <hr
+                className={style.acaraSeparator}
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              />
+
+              {/* Resepsi */}
+              <div
+                className={style.boxbottom}
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h2 className={style.acaraTitle}>Reception</h2>
+                <p className={style.acaraDetail}>• Sunday, August 31 2025</p>
+                <p className={style.acaraTime}>• 10.30 - 13.00 WIB</p>
+              </div>
+            </div>
+
+            {/* Lokasi */}
+            <div
+              className={style.boxVenue}
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <h2 className={style.acaraTitle}>Location</h2>
+              <p className={style.acaraDetail}>
+                Balai Prajurit Graha Bhima Sakti, <br />
+                Pancoran, Jakarta Selatan
+              </p>
+              <a
+                href={MAPS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={style.mapButton}
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
+                <span className={style.mapIcon} aria-hidden="true">
+                  📍
+                </span>
+                <span>Open Maps</span>
+              </a>
             </div>
           </div>
         </div>

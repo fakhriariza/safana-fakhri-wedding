@@ -1,6 +1,6 @@
 import React from "react";
 import "./headerstyle.css";
-import logo from "../assets/logoblack.png";
+import logo from "../assets/logoblackrik.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

@@ -24,7 +24,7 @@ body {
   width: 100%;
   max-width: 430px;
   margin: 0 auto;
-  height: 80vh;
+  height: fit-content;
   overflow: hidden; /* hides overflow caused by scale */
 }
 

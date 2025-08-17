@@ -53,7 +53,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 280px;
   justify-content: center;
 }
 
@@ -79,7 +78,7 @@ body {
     rgba(255, 140, 0, 0.5),
     /* dark orange */ rgba(0, 0, 0, 0.7) /* black overlay */
   );
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -224,6 +223,15 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.atas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -325,7 +333,6 @@ body {
   }
 
   .boxVenue {
-    margin-top: 335px;
   }
 }
 
@@ -354,7 +361,6 @@ body {
   }
 
   .boxVenue {
-    margin-top: 180px;
   }
 }
 
@@ -364,13 +370,11 @@ body {
 
 @media (max-height: 700px) {
   .boxVenue {
-    margin-top: 50px;
   }
 }
 
 @media (max-height: 464px) {
   .boxVenue {
-    margin-top: 20px;
   }
 
   .acaraTitle {
