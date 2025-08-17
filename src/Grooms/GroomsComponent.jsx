@@ -70,8 +70,8 @@ class GroomsComponent extends Component {
                   data-aos="fade-up"
                   data-aos-delay="900"
                 >
-                  2nd Son of (Alm) Mr. Muhammad Janiarto Arie Koesoemo & Mrs.
-                  Siti Zaleha
+                  2nd Son of (Alm) Mr. Muhammad Janiarto Arie Koesoemo
+                  <br></br>& Mrs. Siti Zaleha
                 </p>
               </div>
             </div>
