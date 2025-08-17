@@ -164,6 +164,10 @@ body {
     width: 70px;
     height: 101px;
   }
+
+  .title {
+    font-size: 1.1rem;
+  }
 }
 
 /* HP sedang: 402px sampai 429px */
@@ -175,6 +179,15 @@ body {
   .header-content {
     width: 100vw;
     max-width: 429px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 101px;
+  }
+
+  .title {
+    font-size: 1.1rem;
   }
 }
 
