@@ -53,7 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 250px;
   justify-content: center;
 }
 
@@ -319,6 +319,10 @@ body {
   .acaraDetail {
     font-size: 1.2rem;
   }
+
+  .boxVenue {
+    margin-top: 180px;
+  }
 }
 
 /* HP sedang: 402px sampai 429px */
@@ -343,6 +347,10 @@ body {
 
   .acaraDetail {
     font-size: 1.2rem;
+  }
+
+  .boxVenue {
+    margin-top: 200px;
   }
 }
 

@@ -2,31 +2,33 @@ import React, { useEffect } from "react";
 import styles from "./timeline.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import lamaran from "../assets/lamaran.jpeg";
+import foto2 from "../assets/foto2.png";
 
 const stories = [
   {
     year: "2019",
     title: "The Beginning",
     description:
-      "As a shared passion for social values, they met in Kakak Asuh, an education voluntary community. He, as the founder, she as the new member. They talked for the first time, and they knew they met The One. They dived into conversation like they meet of each other missing home. It's probably right ---when you know, you just know.",
+      "As a shared passion for social values, we met in Kakak Asuh. He, as the founder, she as the new member. We talked for the first time, and we knew we met The One. We dived into conversation like we meet of each other missing home. It's probably right ---when you know, you know.",
   },
   {
     year: "2019",
-    title: "Cliked",
+    title: "Officialy Dating",
     description:
-      "Synced in the same frequency; Intrigued in the same social-politics-even religion values; and having many same of interests, made they share the same feeling. It was different, it was love...",
+      "We were instantly in sync — drawn to the same frames of thought on society, politics, even faith; intertwined in so many interest made us shared the same feeling. It was different, it was love...",
   },
   {
-    year: "",
+    year: "2021",
     title: "Love n Let Go",
     description:
-      "- Love always matter, and that's why loving can hurt. During pandemic, he was in Bandung, she was in Jakarta. Everything felt so wrong. They got lost contact until...",
+      "Love always matter, and that's why loving can hurt. During pandemic, he was in Bandung, she was in Jakarta. Everything felt so wrong, which made us got lost contact until...",
   },
   {
-    year: "",
-    title: "Reunited",
+    year: "2022",
+    title: "The Reunited",
     description:
-      "- ..he sent a very long email, a message that she prayed for---after being separated for a year. The hearts know what it wants. And they, committed to keep this relationship for marriage.",
+      "- ...he wrote a very long email, a message that she secretly prayed for---after being separated for a year. The hearts know what it wants. And we, committed to restart for the more mature re",
   },
   {
     year: "",
@@ -35,8 +37,10 @@ const stories = [
       "- Love always have to build and rebuild. Love never went smoothly, there were ups and downs. They lost contact again, in a week, in months. But Gmail and Google Spreadsheet, always be their messenger. Thanks for the random column and row for keep them connected.",
   },
   {
-    year: "",
+    year: "2025",
     title: "The Vow",
+    image: lamaran,
+    image2: foto2,
     description:
       "- May 4, they finally had the engagement, in front of their families and their loved ones. - Aug 31, inshaAllah, that day will becoming the beginning of their forever long-life journey. Would you please to come and have the joy on their special day?",
   },
@@ -73,6 +77,10 @@ const StoryComponent = () => {
               <span className={styles.year}>{story.year}</span> {story.title}
             </h4>
             <div className={styles.box}>
+              <div className={styles.photo}>
+                <img className={styles.image} src={story.image}></img>
+                <img className={styles.image} src={story.image2}></img>
+              </div>
               <p>{story.description}</p>
             </div>
           </div>

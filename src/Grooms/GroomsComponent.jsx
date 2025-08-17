@@ -71,7 +71,7 @@ class GroomsComponent extends Component {
                   data-aos-delay="900"
                 >
                   PUTRA KEDUA DARI <br /> ALM. BPK. MUHAMMAD <br /> JANIARTO
-                  ARIE <br /> KOESOEMO & IBU <br /> SITI ZALEHA
+                  ARIE <br /> KOESOEMO & <br></br> IBU SITI ZALEHA
                 </p>
               </div>
             </div>

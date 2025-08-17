@@ -58,7 +58,7 @@ body {
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Cormorant Garamond", serif;
   margin: 0;
   font-weight: 400;
@@ -137,7 +137,7 @@ body {
   }
 
   .subtitle {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
 
   .greeting {
@@ -156,7 +156,9 @@ body {
 
 /* HP sedang: 402px sampai 429px */
 @media (min-width: 402px) and (max-width: 429px) {
-  /* CSS khusus HP sedang */
+  .subtitle {
+    font-size: 1rem;
+  }
 }
 
 /* HP besar dan ke atas: 430px atau lebih */

@@ -24,7 +24,7 @@ body {
   width: 100%;
   max-width: 430px;
   margin: 0 auto;
-  height: fit-content;
+  height: 80vh;
   overflow: hidden; /* hides overflow caused by scale */
 }
 
@@ -280,6 +280,10 @@ body {
     max-width: 401px;
     width: 100vw;
   }
+
+  .desc {
+    font-size: 0.6rem;
+  }
 }
 
 /* HP sedang: 402px sampai 429px */
@@ -288,6 +292,10 @@ body {
     z-index: 0;
     max-width: 429px;
     width: 100vw;
+  }
+
+  .desc {
+    font-size: 0.6rem;
   }
   /* CSS khusus HP sedang */
 }

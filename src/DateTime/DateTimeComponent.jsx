@@ -31,8 +31,10 @@ export default function DateTimeComponent() {
                   data-aos-delay="100"
                 >
                   <h2 className={style.acaraTitle}>Akad Nikah</h2>
-                  <p className={style.acaraDetail}>Sunday, August 31st 2025</p>
-                  <p className={style.acaraTime}>07.30 WIB - 09.30 WIB</p>
+                  <p className={style.acaraDetail}>
+                    • Sunday, August 31st 2025
+                  </p>
+                  <p className={style.acaraTime}>• 07.30 WIB - 09.30 WIB</p>
                 </div>
 
                 <hr
@@ -48,8 +50,10 @@ export default function DateTimeComponent() {
                   data-aos-delay="300"
                 >
                   <h2 className={style.acaraTitle}>Resepsi</h2>
-                  <p className={style.acaraDetail}>Sunday, August 31st 2025</p>
-                  <p className={style.acaraTime}>10.30 - 13.00 WIB</p>
+                  <p className={style.acaraDetail}>
+                    • Sunday, August 31st 2025
+                  </p>
+                  <p className={style.acaraTime}>• 10.30 - 13.00 WIB</p>
                 </div>
 
                 {/* Lokasi */}

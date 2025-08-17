@@ -2,6 +2,8 @@ import React from "react";
 import style from "./gift.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import BankRow from "./BankRow";
+import bcaLogo from "../assets/bcalogo.png";
 
 class GiftComponent extends React.Component {
   componentDidMount() {
@@ -32,9 +34,9 @@ class GiftComponent extends React.Component {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              Your blessing and coming to our wedding are enough for us.
-              However, if you want to give a gift, we provide a Digital Envelope
-              to make it easier for you – thank you!
+              Your presence at our wedding are blessings for us. However, if you
+              would like to send a gift, we provide a Digital Envelope to make
+              it easier for you – thank you!
             </h1>
 
             <div
@@ -43,6 +45,7 @@ class GiftComponent extends React.Component {
               data-aos-delay="500"
             >
               <p>"Muhammad Fakhri"</p>
+              <BankRow logo={bcaLogo} accountNumber="1234 5678 9012 3456" />
             </div>
 
             <div

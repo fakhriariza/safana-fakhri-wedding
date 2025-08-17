@@ -121,6 +121,45 @@ body {
   transform: translateY(0);
 }
 
+.bankRow {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  justify-content: center;
+  max-width: 420px;
+}
+
+.bankLogo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.accountNumber {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.copyBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.copyBtn:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.copyFeedback {
+  font-size: 0.75rem;
+  color: green;
+  margin-left: 8px;
+}
+
 /* HP kecil: sampai 401px */
 @media (max-width: 401px) {
   /* CSS khusus HP kecil */
