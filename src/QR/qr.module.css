@@ -25,7 +25,7 @@ body {
   width: 100vw;
   max-width: 430px;
   height: auto; /* let height adapt to content */
-  background: url("../assets/drapery.jpeg") center/cover no-repeat; /* replace with your QR background if needed */
+  background: url("../assets/drapery.png") center/cover no-repeat; /* replace with your QR background if needed */
   display: flex;
   align-items: center;
   justify-content: center;

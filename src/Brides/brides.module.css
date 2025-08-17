@@ -41,7 +41,7 @@ body {
 .overlaybrides {
   position: absolute;
   inset: 0;
-  background: url("../assets/draperybrides.jpeg") center/cover no-repeat;
+  background: url("../assets/draperybrides.png") center/cover no-repeat;
 }
 
 .bridescontent {

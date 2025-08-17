@@ -1,7 +1,7 @@
 import React from "react";
 import doastyle from "./doastyle.module.css";
 import doabg from "../assets/bgdoa.jpg";
-import bgdoasec from "../assets/bgdoasec.jpg";
+import bgdoasec from "../assets/bgdoasec.png";
 import "animate.css";
 import classNames from "classnames";
 

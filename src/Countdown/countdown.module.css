@@ -41,7 +41,7 @@ body {
 .overlaydoa {
   position: absolute;
   inset: 0;
-  background: url("../assets/drapery.jpeg") center/cover no-repeat;
+  background: url("../assets/drapery.png") center/cover no-repeat;
 }
 
 .topcontent {
