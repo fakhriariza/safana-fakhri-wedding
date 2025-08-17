@@ -123,7 +123,8 @@
     rgba(255, 140, 0, 0.5),
     /* dark orange */ rgba(0, 0, 0, 0.2) /* black overlay */
   );
-  width: 380px; /* or any value you want */
+  width: 100vw; /* or any value you want */
+  max-width: 350px;
   text-align: left;
 }
 
@@ -136,7 +137,8 @@
   }
 
   .box {
-    width: 330px;
+    width: 100vw;
+    max-width: 320px;
   }
 }
 
@@ -153,7 +155,8 @@
   }
 
   .box {
-    width: 330px;
+    width: 100vw;
+    max-width: 320px;
   }
 }
 

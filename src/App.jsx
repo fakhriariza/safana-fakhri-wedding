@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import api from "./api";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+} from "react-router-dom";
 
 import HeaderComponent from "./Header/HeaderComponent";
 import DoaComponent from "./Doa/DoaComponent";
