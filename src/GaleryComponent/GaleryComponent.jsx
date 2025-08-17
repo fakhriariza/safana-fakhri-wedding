@@ -4,17 +4,17 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import wedding1 from "../assets/wedding1.jpg";
-import wedding2 from "../assets/wedding2.JPG";
-import wedding3 from "../assets/wedding3.JPG";
+import wedding2 from "../assets/wedding2.jpg";
+import wedding3 from "../assets/wedding3.jpg";
 import wedding4 from "../assets/wedding4.jpg";
-import wedding5 from "../assets/wedding5.JPG";
-import wedding6 from "../assets/wedding6.JPG";
-import wedding7 from "../assets/wedding7.JPG";
-import wedding8 from "../assets/wedding8.JPG";
-import wedding9 from "../assets/wedding9.JPG";
-import wedding10 from "../assets/wedding10.JPG";
-import wedding11 from "../assets/wedding11.JPG";
-import wedding12 from "../assets/wedding12.JPG";
+import wedding5 from "../assets/wedding5.jpg";
+import wedding6 from "../assets/wedding6.jpg";
+import wedding7 from "../assets/wedding7.jpg";
+import wedding8 from "../assets/wedding8.jpg";
+import wedding9 from "../assets/wedding9.jpg";
+import wedding10 from "../assets/wedding10.jpg";
+import wedding11 from "../assets/wedding11.jpg";
+import wedding12 from "../assets/wedding12.jpg";
 import wedding13 from "../assets/wedding13.png";
 import wedding14 from "../assets/wedding14.jpeg";
 
