@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BankRow from "./BankRow";
 import bcaLogo from "../assets/bcalogo.png";
+import brilogo from "../assets/logobankbri.png";
 
 class GiftComponent extends React.Component {
   componentDidMount() {
@@ -45,7 +46,11 @@ class GiftComponent extends React.Component {
               data-aos-delay="500"
             >
               <p>Muhammad Fakhri Dwi Ariza</p>
-              <BankRow logo={bcaLogo} accountNumber="1234 5678 9012 3456" />
+              <BankRow
+                logo={brilogo}
+                accountNumber="7951 0102 9471 535"
+                accountNumberRil="795101029471535"
+              />
             </div>
 
             <div
@@ -54,7 +59,11 @@ class GiftComponent extends React.Component {
               data-aos-delay="700"
             >
               <p>Safana Salsabila Wicaksono</p>
-              <BankRow logo={bcaLogo} accountNumber="1234 5678 9012 3456" />
+              <BankRow
+                logo={bcaLogo}
+                accountNumber="2303 2338 81"
+                accountNumberRil="2303233881"
+              />
             </div>
           </div>
         </div>

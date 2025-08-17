@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Copy } from "lucide-react";
 import style from "./gift.module.css";
 
-export default function BankRow({ logo, accountNumber }) {
+export default function BankRow({ logo, accountNumber, accountNumberRil }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(accountNumber);
+    navigator.clipboard.writeText(accountNumberRil);
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
   };

@@ -3,7 +3,7 @@ import styles from "./timeline.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import lamaran from "../assets/lamaran.jpeg";
-import foto2 from "../assets/foto2.png";
+import foto2 from "../assets/fotostory2.png";
 
 const stories = [
   {
