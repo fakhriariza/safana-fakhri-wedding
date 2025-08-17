@@ -1,21 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./App.css";
 import api from "./api";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-} from "react-router-dom";
 
 import HeaderComponent from "./Header/HeaderComponent";
-import DoaComponent from "./Doa/DoaComponent";
 import BridesComponent from "./Brides/BridesComponent";
-import GroomsComponent from "./Grooms/GroomsComponent";
-import CeremonyHeader from "./CeremonyHeader/CeremonyHeader";
-import AndComponent from "./And/AndComponent";
 import QRComponent from "./QR/QRComponent";
-import TimePage from "./TimePage/TimePage";
 import WishPage from "./Wishes/Wishes";
 import DateTimeComponent from "./DateTime/DateTimeComponent";
 import DresscodeComponent from "./Dresscode/DresscodeComponent";
@@ -31,6 +20,9 @@ function App() {
   const [guestData, setGuestData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [isOpened, setIsOpened] = useState(false);
+
+  // ✅ Ref for DoaComponentTwo
+  const doaRef = useRef(null);
 
   // Extract slug from URL
   const getSlugFromUrl = () => {
@@ -59,6 +51,13 @@ function App() {
       });
   }, []);
 
+  // ✅ Scroll AFTER DoaComponentTwo is rendered
+  useEffect(() => {
+    if (isOpened && doaRef.current) {
+      doaRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [isOpened]);
+
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -67,13 +66,19 @@ function App() {
     <div>
       <HeaderComponent
         guestData={guestData}
-        onOpen={() => setIsOpened(true)}
+        onOpen={() => setIsOpened(true)} // only open
         isOpened={isOpened}
       />
+
       <MusicComponent />
+
       {isOpened && (
         <>
-          <DoaComponentTwo />
+          {/* attach ref to DoaComponentTwo */}
+          <div ref={doaRef}>
+            <DoaComponentTwo />
+          </div>
+
           <BridesComponent />
           <DateTimeComponent />
           <CountdownComponent />
