@@ -70,8 +70,8 @@ class GroomsComponent extends Component {
                   data-aos="fade-up"
                   data-aos-delay="900"
                 >
-                  PUTRA KEDUA DARI <br /> ALM. BPK. MUHAMMAD <br /> JANIARTO
-                  ARIE <br /> KOESOEMO & <br></br> IBU SITI ZALEHA
+                  2nd Son of (Alm) Mr. Muhammad Janiarto Arie Koesoemo & Mrs.
+                  Siti Zaleha
                 </p>
               </div>
             </div>
