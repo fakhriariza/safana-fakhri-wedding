@@ -28,13 +28,13 @@ const stories = [
     year: "2022",
     title: "The Reunited",
     description:
-      "he wrote a very long email, a message that she secretly prayed for---after being separated for a year. The heart knows what it wants. Relationship began more mature.",
+      "...he wrote a very long email, a message that she secretly prayed for---after being separated for a year. The heart knows what it wants. Relationship began more mature.",
   },
   {
     year: "2023-2024",
     title: "Ups n Downs",
     description:
-      "Love always have to build and rebuild. Each time we got lost contact, Gmail and Google Spreadsheet always be our messenger. Thanks for the random column and row for keep them connected.",
+      "Love always have to build and rebuild. Each time we got lost contact, Gmail and Google Spreadsheet always be our messenger. Thanks for the random column and row for keep us connected.",
   },
   {
     year: "2025",
