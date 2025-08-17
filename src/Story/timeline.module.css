@@ -9,7 +9,7 @@
   width: 100vw;
   margin: 0 auto;
   height: fit-content;
-  background: url("../assets/bgphoto.png") center/cover no-repeat; /* replace with your QR background if needed */
+  background: url("../assets/fotobg2.png") center/cover no-repeat; /* replace with your QR background if needed */
 }
 
 .item {

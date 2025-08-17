@@ -32,7 +32,7 @@ export default function DateTimeComponent() {
                 >
                   <h2 className={style.acaraTitle}>Akad Nikah</h2>
                   <p className={style.acaraDetail}>• Sunday, August 31 2025</p>
-                  <p className={style.acaraTime}>• 07.30 WIB - 09.30 WIB</p>
+                  <p className={style.acaraTime}>• 07.30 - 09.30 WIB</p>
                 </div>
 
                 <hr
