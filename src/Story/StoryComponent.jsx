@@ -28,13 +28,13 @@ const stories = [
     year: "2022",
     title: "The Reunited",
     description:
-      "- .he wrote a very long email, a message that she secretly prayed for---after being separated for a year. The heart knows what it wants. Relationship began more mature.",
+      "he wrote a very long email, a message that she secretly prayed for---after being separated for a year. The heart knows what it wants. Relationship began more mature.",
   },
   {
     year: "2023-2024",
     title: "Ups n Downs",
     description:
-      "- Love always have to build and rebuild. Each time we got lost contact, Gmail and Google Spreadsheet always be our messenger. Thanks for the random column and row for keep them connected.",
+      "Love always have to build and rebuild. Each time we got lost contact, Gmail and Google Spreadsheet always be our messenger. Thanks for the random column and row for keep them connected.",
   },
   {
     year: "2025",
@@ -42,9 +42,9 @@ const stories = [
     image: lamaran,
     image2: foto2,
     description2:
-      "- Aug 31, inshaAllah, we will begin our forever long-life journey. Would you please to come and have the joy on our special day?",
+      "• Aug 31, inshaAllah, we will begin our forever long-life journey. Would you please to come and have the joy on our special day?",
     description:
-      "- May 4, we finally got engaged, surrounded by our families and loved ones.",
+      "• May 4, we finally got engaged, surrounded by our families and loved ones.",
   },
 ];
 

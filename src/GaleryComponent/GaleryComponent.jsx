@@ -17,6 +17,7 @@ import wedding11 from "../assets/wedding11.jpg";
 import wedding12 from "../assets/wedding12.jpg";
 import wedding13 from "../assets/wedding13.png";
 import wedding14 from "../assets/wedding14.jpeg";
+import wedding15 from "../assets/wedding15.jpeg";
 
 const photoList = [
   wedding1,
@@ -33,6 +34,7 @@ const photoList = [
   wedding12,
   wedding13,
   wedding14,
+  wedding15,
 ];
 
 const GaleryComponent = () => {
