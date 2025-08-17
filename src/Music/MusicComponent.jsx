@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import sound from "../assets/lagu2.mp3";
+import sound from "../assets/theone.mp3";
 import musicIcon from "../assets/icon_play.gif";
 import playIcon from "../assets/icon_play_icon.gif";
 import style from "./music.module.css";
