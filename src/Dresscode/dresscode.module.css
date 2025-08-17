@@ -83,6 +83,17 @@ body {
   margin-bottom: 20px;
 }
 
+[data-aos] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .image {
   width: 200px;
   height: 200px;

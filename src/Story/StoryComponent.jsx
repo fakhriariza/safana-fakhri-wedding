@@ -1,4 +1,7 @@
+import React, { useEffect } from "react";
 import styles from "./timeline.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const stories = [
   {
@@ -40,11 +43,27 @@ const stories = [
 ];
 
 const StoryComponent = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      easing: "ease-in-out",
+    });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className={styles.timeline}>
-      <h1 className={styles.title}>Our Story</h1>
+      <h1 data-aos="fade-down" data-aos-delay="100" className={styles.title}>
+        Our Story
+      </h1>
       {stories.map((story, index) => (
-        <div className={styles.item} key={index}>
+        <div
+          className={styles.item}
+          key={index}
+          data-aos="fade-up"
+          data-aos-delay={150 + index * 150}
+        >
           <div className={styles.marker}>
             <div className={styles.circle} />
             {index !== stories.length - 1 && <div className={styles.line} />}

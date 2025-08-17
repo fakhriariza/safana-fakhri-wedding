@@ -1,6 +1,8 @@
 import React from "react";
 import QRCode from "qrcode";
 import qr from "./qr.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 class QRComponent extends React.Component {
   constructor(props) {
@@ -11,6 +13,10 @@ class QRComponent extends React.Component {
   }
 
   componentDidMount() {
+    // Initialize AOS with custom settings
+    AOS.init({ duration: 1200, once: false, easing: "ease-in-out-back" });
+    AOS.refresh();
+
     const { invitationId } = this.props;
 
     if (invitationId) {
@@ -49,18 +55,38 @@ class QRComponent extends React.Component {
         <div className={qr.overlaydoa}></div>
 
         <div className={qr.doacontent}>
-          <h1 className={qr.doatitle}>Digital Appointment QR Code</h1>
+          <h1 data-aos="flip-left" data-aos-delay="100" className={qr.doatitle}>
+            Invitation <br /> QR Code
+          </h1>
 
           {qrDataUrl && (
-            <img src={qrDataUrl} alt="QR Code" className={qr.qr_code} />
+            <img
+              data-aos="zoom-in-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              src={qrDataUrl}
+              alt="QR Code"
+              className={qr.qr_code}
+            />
           )}
 
-          <p className={qr.doatext}>
+          <p
+            data-aos="slide-right"
+            data-aos-delay="500"
+            data-aos-duration="1200"
+            className={qr.doatext}
+          >
             This QR Code is your personal invitation. Please have it ready to
             show at the entrance upon arrival.
           </p>
 
-          <button onClick={this.downloadQR} className={qr.download_button}>
+          <button
+            data-aos="flip-up"
+            data-aos-delay="700"
+            data-aos-duration="1300"
+            onClick={this.downloadQR}
+            className={qr.download_button}
+          >
             Download QR Code
           </button>
         </div>

@@ -93,6 +93,17 @@ body {
   transform: scale(1.05);
 }
 
+[data-aos] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Small phones: up to 401px */
 @media (max-width: 401px) {
   .doatitle {

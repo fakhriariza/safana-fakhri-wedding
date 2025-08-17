@@ -50,6 +50,17 @@
   min-height: 40px; /* this ensures the line has some space */
 }
 
+[data-aos] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Tambahkan garis ke bawah dari titik */
 
 /* 
