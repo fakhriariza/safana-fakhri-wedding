@@ -63,7 +63,7 @@ const GaleryComponent = () => {
               style[`size${(index % 5) + 1}`]
             }`}
             data-aos="zoom-in"
-            data-aos-delay={100 + index * 150} // stagger animation
+            data-aos-delay={100 + index * 150}
           >
             <img
               src={photo}
