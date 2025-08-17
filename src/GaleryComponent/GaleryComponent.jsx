@@ -12,7 +12,6 @@ import wedding6 from "../assets/wedding6.jpg";
 import wedding7 from "../assets/wedding7.jpg";
 import wedding8 from "../assets/wedding8.jpg";
 import wedding9 from "../assets/wedding9.jpg";
-import wedding10 from "../assets/wedding10.jpg";
 import wedding11 from "../assets/wedding11.jpg";
 import wedding12 from "../assets/wedding12.jpg";
 import wedding13 from "../assets/wedding13.png";
@@ -28,7 +27,6 @@ const photoList = [
   wedding7,
   wedding8,
   wedding9,
-  wedding10,
   wedding11,
   wedding12,
   wedding13,
