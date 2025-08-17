@@ -29,12 +29,12 @@ const photoList = [
   wedding7,
   wedding8,
   wedding9,
-  wedding10,
+  wedding15,
   wedding11,
   wedding12,
   wedding13,
   wedding14,
-  wedding15,
+  wedding10,
 ];
 
 const GaleryComponent = () => {
@@ -42,7 +42,7 @@ const GaleryComponent = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1,
       once: false,
       easing: "ease-in-out",
     });
