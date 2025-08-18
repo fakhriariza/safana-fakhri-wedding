@@ -58,7 +58,10 @@ body {
 
 .overlaybrides {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: url("../assets/bg.jpg") center/cover no-repeat;
 }
 
@@ -74,6 +77,12 @@ body {
   margin: 0 auto;
   border-radius: 20px;
   background: linear-gradient(
+    to right,
+    rgba(255, 140, 0, 0.5),
+    /* dark orange */ rgba(0, 0, 0, 0.7) /* black overlay */
+  );
+
+  background: -webkit-linear-gradient(
     to right,
     rgba(255, 140, 0, 0.5),
     /* dark orange */ rgba(0, 0, 0, 0.7) /* black overlay */
