@@ -130,7 +130,7 @@
 }
 
 /* HP kecil: sampai 401px */
-@media (max-width: 401px) {
+@media (max-width: 360px) {
   /* CSS khusus HP kecil */
   .timeline {
     max-width: 401px;
@@ -139,7 +139,7 @@
 
   .box {
     width: 100vw;
-    max-width: 320px;
+    max-width: 300px;
   }
 }
 
