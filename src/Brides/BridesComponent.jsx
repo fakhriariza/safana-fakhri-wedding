@@ -85,7 +85,7 @@ class BridesComponent extends Component {
                   data-aos="fade-up"
                   data-aos-delay="500"
                 >
-                  5th Daughter of Mr. Sonny Wicaksono & Mrs. Krissantiana
+                  Fifth Daughter of Mr. Sonny Wicaksono & Mrs. Krissantiana
                 </p>
               </div>
             </div>

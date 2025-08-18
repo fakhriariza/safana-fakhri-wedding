@@ -70,8 +70,8 @@ class GroomsComponent extends Component {
                   data-aos="fade-up"
                   data-aos-delay="900"
                 >
-                  2nd Son of <br></br>(Alm) Mr. Muhammad Janiarto<br></br> Arie
-                  Koesoemo
+                  Second Son of <br></br>(Alm) Mr. Muhammad Janiarto<br></br>{" "}
+                  Arie Koesoemo
                   <br></br>& Mrs. Siti Zaleha
                 </p>
               </div>
