@@ -180,22 +180,22 @@ body {
   .textContainer {
     transform: translate(-50%, -80%);
   }
+}
 
-  @media (max-width: 350px) {
-    /* CSS khusus HP kecil */
+@media (max-width: 350px) {
+  /* CSS khusus HP kecil */
 
-    .doatitle {
-      font-size: 1.2rem;
-    }
+  .doatitle {
+    font-size: 1.2rem;
+  }
 
-    .doatext {
-      font-size: 0.8rem;
-      margin-left: 30px;
-      margin-right: 30px;
-    }
+  .doatext {
+    font-size: 0.8rem;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
-    .textContainer {
-      transform: translate(-50%, -30%) !important;
-    }
+  .textContainer {
+    transform: translate(-50%, -70%) !important;
   }
 }

@@ -150,6 +150,13 @@
     width: 100vw;
     max-width: 280px;
   }
+
+  .image {
+    width: 90px;
+    height: fit-content;
+    max-height: 100px;
+    border-radius: 20px;
+  }
 }
 
 /* HP sedang: 402px sampai 429px */
@@ -162,6 +169,13 @@
   .box {
     width: 100vw;
     max-width: 310px;
+  }
+
+  .image {
+    width: 100px;
+    height: fit-content;
+    max-height: 100px;
+    border-radius: 20px;
   }
 }
 
