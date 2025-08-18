@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import bridesstyle from "./grooms.module.css";
-import groompic from "../assets/fotofixkali.png";
+import groompic from "../assets/foto3.png";
 import classNames from "classnames";
 import AOS from "aos";
 import "aos/dist/aos.css";
