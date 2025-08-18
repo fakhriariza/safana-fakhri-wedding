@@ -312,3 +312,9 @@ body {
 /* HP besar dan ke atas: 430px atau lebih */
 @media (min-width: 430px) {
 }
+
+@media (max-width: 380px) {
+  .bridesTitle {
+    font-size: 2rem;
+  }
+}

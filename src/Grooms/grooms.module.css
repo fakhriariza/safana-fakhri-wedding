@@ -304,3 +304,22 @@ body {
 /* HP besar dan ke atas: 430px atau lebih */
 @media (min-width: 430px) {
 }
+
+@media (min-width: 402px) and (max-width: 429px) {
+  .image {
+    z-index: 0;
+    max-width: 429px;
+    width: 100vw;
+  }
+
+  .desc {
+    font-size: 0.6rem;
+  }
+  /* CSS khusus HP sedang */
+}
+
+@media (max-width: 380px) {
+  .bridesTitle {
+    font-size: 2rem;
+  }
+}
