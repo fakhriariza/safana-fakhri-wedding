@@ -14,7 +14,7 @@ const stories = [
   },
   {
     year: "2019",
-    title: "Officialy Dating",
+    title: "Officially Dating",
     description:
       "We were instantly in sync — drawn to the same frames of thought on society, politics, even faith; intertwined in so many interest made us shared the same feeling. It was different, it was love...",
   },
@@ -26,7 +26,7 @@ const stories = [
   },
   {
     year: "2022",
-    title: "The Reunited",
+    title: "The Reunion",
     description:
       "...he wrote a very long email, a message that she secretly prayed for---after being separated for a year. The heart knows what it wants. Relationship began more mature.",
   },
