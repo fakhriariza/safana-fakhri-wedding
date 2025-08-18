@@ -32,7 +32,7 @@ const stories = [
   },
   {
     year: "2023-2024",
-    title: "Ups n Downs",
+    title: "Growing Chapter",
     description:
       "Love always have to build and rebuild. Each time we got lost contact, Gmail and Google Spreadsheet always be our messenger. Thanks for the random column and row for keep us connected.",
   },
