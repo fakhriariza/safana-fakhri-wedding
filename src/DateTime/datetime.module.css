@@ -67,7 +67,7 @@ body {
   z-index: 1;
   text-align: center;
   color: white;
-  width: 380px;
+  width: 90vw;
   height: 90vh;
   padding: 20px 0;
   max-width: 380px;
@@ -312,7 +312,8 @@ body {
 /* HP kecil: sampai 401px */
 @media (max-width: 401px) {
   .bridescontent {
-    width: 350px;
+    width: 90vw;
+    max-width: 350px;
   }
 
   .header {
@@ -336,10 +337,18 @@ body {
   }
 }
 
-/* HP sedang: 402px sampai 429px */
-@media (min-width: 402px) and (max-width: 429px) {
+@media (max-width: 370px) {
   .bridescontent {
-    width: 360px;
+    width: 90vw;
+    max-width: 320px;
+  }
+}
+
+/* HP sedang: 402px sampai 429px */
+@media (min-width: 371px) and (max-width: 429px) {
+  .bridescontent {
+    width: 90vw;
+    max-width: 350px;
   }
 
   .header {
