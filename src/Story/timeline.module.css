@@ -110,7 +110,21 @@
 }
 
 .box {
+  /* fallback untuk browser tua */
   background-color: #f5f5f5;
+
+  /* vendor prefix untuk jaga-jaga di WebView lama */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 140, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 140, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
+
   padding: 12px;
   border-radius: 20px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
@@ -119,12 +133,8 @@
   color: white;
   font-family: "Cormorant Garamond", serif;
   font-weight: bold;
-  background: linear-gradient(
-    to right,
-    rgba(255, 140, 0, 0.5),
-    /* dark orange */ rgba(0, 0, 0, 0.2) /* black overlay */
-  );
-  width: 100vw; /* or any value you want */
+
+  width: 100vw; /* atau sesuai kebutuhan */
   max-width: 350px;
   text-align: left;
 }
